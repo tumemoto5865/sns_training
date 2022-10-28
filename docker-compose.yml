@@ -1,0 +1,68 @@
+version: "3.8"
+services:
+  php:
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/var/www/html
+      - ./php/log:/var/log
+      - ./php/php.ini:/usr/local/etc/php/php.ini
+      - ./php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini #【2022.2.16追加】
+    ports:
+      - 8010:80
+    restart: always
+    depends_on:
+      - mysql
+    image: php
+    container_name: php
+ 
+  mysql:
+    build:
+      context: ./mysql
+      dockerfile: Dockerfile
+    volumes:
+      # データ永続化
+      # MySQL Database初期化用SQLを./mysql/sqlに配置します。
+      - ./mysql/sql:/docker-entrypoint-initdb.d
+      # MySQLの内容を./dataディレクトリに保持します。
+      - ./data:/var/lib/mysql
+      - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_USER: root
+        # Rootユーザーを、パスワードなしでMySQLへのログインを許可します。
+        # MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+        # MySQLのRootユーザーのパスワードを設定する場合は、
+        # MYSQL_ALLOW_EMPTY_PASSWORDをコメントアウトし、MYSQL_ROOT_PASSWORDでパスワードを指定します。
+      MYSQL_ROOT_PASSWORD: root
+      # Database名称の指定
+      MYSQL_DATABASE: test_db
+      # 作業用MySQLユーザー名称の指定
+      MYSQL_USER: test_db_docker
+      # 作業用MySQLユーザーパスワードの指定
+      MYSQL_PASSWORD: test_db_docker_pass
+    image: mysql
+    container_name: mysql
+    restart: always
+ 
+  phpmyadmin:
+    image: phpmyadmin:latest
+    environment:
+      # - PMA_ARBITRARY=1
+      - PMA_HOST=mysql
+      - PMA_USER=root
+      - PMA_PASSWORD=root
+    ports:
+      - "8080:80"
+    volumes:
+      - ./phpmyadmin/sessions:/sessions
+        #【↓2022.2.16追加：phpMyAdminでデータベースファイルのインポート可能容量を変更するiniファイル】
+      - ./phpmyadmin/phpmyadmin-misc.ini:/usr/local/etc/php/conf.d/phpmyadmin-misc.ini
+    depends_on:
+      - mysql
+    links:
+      - mysql
+    container_name: phpmyadmin
+    restart: always
