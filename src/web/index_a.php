@@ -2,33 +2,27 @@
 
 require("../app/functions.php");
 
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-  $postingMessage = trim(filter_input(INPUT_POST, "postingMessage")) ?? "";
-  
-  if ($postingMessage !== "") {
-  $fp = fopen("../app/postedText.txt", "a");
-  fwrite($fp, $postingMessage . "\n");
-  fclose($fp);
-  }
-
-} else {
-//  exit("Invalid Request");
-}
-
-$messages = file("../app/postedText.txt", FILE_IGNORE_NEW_LINES);
-
 include("../app/_parts/_header.php");//ヘッダー
 ?>
 
 
-
+<?php
+$messages = file("../app/postedText.txt", FILE_IGNORE_NEW_LINES);
+?>
 <ul>
-  <?php foreach ($messages as $message): ?>
-  <li><?= hsc($message); ?></li>
+  <?php foreach ($messages as $messageKey => $message): ?>
+  <li style="display: flex";>
+    <?= hsc($message); ?>
+    <form action="../app/postProcess.php" method="post" style="padding-left: 8px";>
+      <input type="hidden" name="delete" value="<?= $messageKey ?>"><!-- インデックス番号取得 -->
+      <button>削除</button>
+    </form>
+
+  </li>
   <?php endforeach; ?>
 </ul>
 
-<form action="" method="post">
+<form action="../app/postProcess.php" method="post">
     <input type="text" name="postingMessage">
   <button>Post</button>
 </form>
