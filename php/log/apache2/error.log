@@ -1,0 +1,4 @@
+Cannot load Xdebug - it was already loaded
+[03-Nov-2022 19:47:38 Asia/Tokyo] PHP Deprecated:  PHP Startup: Use of mbstring.internal_encoding is deprecated in Unknown on line 0
+[Thu Nov 03 10:47:38.488340 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.12 configured -- resuming normal operations
+[Thu Nov 03 10:47:38.488681 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
