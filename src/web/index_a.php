@@ -5,7 +5,9 @@ require("../app/functions.php");
 include("../app/_parts/_header.php");//ヘッダー
 ?>
 
-
+<h1></h1>
+<a href="dbsearch.php">DB-search</a>
+<h1></h1>
 <?php
 $messages = file("../app/postedText.txt", FILE_IGNORE_NEW_LINES);
 ?>

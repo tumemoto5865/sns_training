@@ -1,5 +1,7 @@
 <?php
+require("../app/functions.php");
 
+include("../app/_parts/_header.php");//ヘッダー
 
 if ($_SERVER["REQUEST_METHOD"] === "POST")//リクエストメソッドがPOSTだったら
 {
@@ -40,5 +42,8 @@ else {//リクエストメソッドがPOSTではなかったら終了
   ?><p>Invalid Request</p><?php
   exit();
 }
+
+include("../app/_parts/_footer.php");
+
   ?>
 
