@@ -1,0 +1,10 @@
+{
+	"autoload": {
+	  "psr-4": {
+		  "Api\\":"api/",
+		  "App\\":"app/",
+		  "Routes\\":"routes/",
+		  "Views\\":"views/"
+	  }
+	}
+}

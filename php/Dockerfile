@@ -8,3 +8,5 @@ RUN apt-get update \
  
 RUN echo "ServerName localhost" | tee /etc/apache2/conf-available/fqdn.conf
 RUN a2enconf fqdn
+
+COPY --from=composer /usr/bin/composer /usr/bin/composer
