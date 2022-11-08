@@ -3,6 +3,7 @@
 try {
 	// DB接続設定
 	$dsn = 'mysql:host=mysql;dbname=test_db;';
+	
 	$db = new PDO($dsn, 'test_db_docker', 'test_db_docker_pass');
 				
 	// SQL実行
