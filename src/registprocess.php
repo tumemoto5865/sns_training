@@ -43,7 +43,11 @@ include('app/_parts/_header.php');
 
 // $user_tel = trim(filter_input(INPUT_POST, "user_tel"));
 // $user_tel = $user_tel !== "" ? $user_tel : "電話番号が空欄です";
+<<<<<<< HEAD
 
+=======
+validateToken();
+>>>>>>> 20221107hasegawa
 //スッキリと配列にして受け取るべし。htmlspecialcharactorsも使っておく。
 $regist_info = [
   "ID"=>hsc(filter_input(INPUT_POST, "user_id")),
@@ -78,6 +82,7 @@ if (in_array("", $regist_info, true)) { ?>
   <button type="button" onclick="history.back()" id="submit">戻る</button>
 <?php
 } else {
+<<<<<<< HEAD
 
 
   //配列にしたはいいがプリペアドステートメントに配列を渡して一気に処理する方法がわからなかったのでforeachでひとつずつやるしか...
@@ -96,6 +101,34 @@ $stmt->execute();
 <p style="text-align: center; margin-top: 80px; font-size: x-large;">登録完了</p>
 <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
 <?php 
+=======
+  //配列にしたはいいがプリペアドステートメントに配列を渡して一気に処理する方法がわからなかったのでforeachでひとつずつやるしか...
+  //トランザクション開始
+  try{
+    $pdo->beginTransaction();
+      $stmt = $pdo->prepare('INSERT INTO user_data (ID, パスワード, お名前, 住所, 電話番号, メールアドレス) VALUE (?, ?, ?, ?, ?, ?)');
+      $i = 1;
+      foreach($regist_info as $split_info) {
+        // echo ($i . PHP_EOL);
+        $stmt->bindValue($i, $split_info , PDO::PARAM_STR);
+        $i++;
+        // echo ($split_info . PHP_EOL);
+        
+      }
+      $i = 1;
+      $stmt->execute();
+      ?>
+      <p style="text-align: center; margin-top: 80px; font-size: x-large;">登録完了</p>
+      <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
+      <?php 
+    $pdo->commit();
+  }
+  catch (PDOException $e){
+    $pdo->rollback();
+    echo $e->getMessage() . PHP_EOL;
+    //トランザクション〆
+}
+>>>>>>> 20221107hasegawa
 }
 ?>
   

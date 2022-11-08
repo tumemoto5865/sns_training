@@ -797,3 +797,50 @@ Cannot load Xdebug - it was already loaded
 [Tue Nov 08 18:46:44.277579 2022] [php:notice] [pid 23] [client 172.18.0.1:52910] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
 [Tue Nov 08 18:46:45.205763 2022] [php:notice] [pid 23] [client 172.18.0.1:52910] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/search.php
 [Tue Nov 08 18:46:46.109983 2022] [php:notice] [pid 23] [client 172.18.0.1:52910] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+<<<<<<< HEAD
+=======
+[Tue Nov 08 18:51:24.792091 2022] [php:notice] [pid 20] [client 172.18.0.1:52954] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/regist.php
+[Tue Nov 08 18:51:26.421669 2022] [php:notice] [pid 20] [client 172.18.0.1:52954] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/regist.php
+[Tue Nov 08 18:51:28.796801 2022] [php:notice] [pid 20] [client 172.18.0.1:52954] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 18:51:31.337198 2022] [php:notice] [pid 20] [client 172.18.0.1:52954] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/search.php
+[Tue Nov 08 18:51:32.691021 2022] [php:notice] [pid 20] [client 172.18.0.1:52954] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 18:51:33.947003 2022] [php:notice] [pid 20] [client 172.18.0.1:52954] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/regist.php
+[Tue Nov 08 19:04:58.437710 2022] [php:notice] [pid 18] [client 172.18.0.1:52982] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 19:04:59.877171 2022] [php:notice] [pid 18] [client 172.18.0.1:52982] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/regist.php
+[Tue Nov 08 19:05:01.029204 2022] [php:notice] [pid 18] [client 172.18.0.1:52982] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:06:39.084300 2022] [php:notice] [pid 19] [client 172.18.0.1:53038] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/search.php
+[Tue Nov 08 20:06:45.681173 2022] [php:notice] [pid 20] [client 172.18.0.1:53048] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:06:46.432484 2022] [php:notice] [pid 20] [client 172.18.0.1:53048] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:06:48.605770 2022] [php:notice] [pid 20] [client 172.18.0.1:53048] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/search.php
+[Tue Nov 08 20:07:22.834784 2022] [php:notice] [pid 18] [client 172.18.0.1:53066] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:07:23.824316 2022] [php:notice] [pid 18] [client 172.18.0.1:53066] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:07:28.143945 2022] [php:notice] [pid 18] [client 172.18.0.1:53066] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:07:29.541222 2022] [php:notice] [pid 18] [client 172.18.0.1:53066] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/search.php
+[Tue Nov 08 20:08:20.919513 2022] [php:notice] [pid 21] [client 172.18.0.1:53088] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:08:23.719250 2022] [php:notice] [pid 21] [client 172.18.0.1:53088] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:08:27.047256 2022] [php:notice] [pid 21] [client 172.18.0.1:53088] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened.
+[Tue Nov 08 20:08:56.957401 2022] [php:notice] [pid 17] [client 172.18.0.1:53104] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened.
+[Tue Nov 08 20:09:09.622017 2022] [php:notice] [pid 18] [client 172.18.0.1:53112] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/search.php
+[Tue Nov 08 20:09:10.771421 2022] [php:notice] [pid 18] [client 172.18.0.1:53112] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:09:10.787209 2022] [php:error] [pid 18] [client 172.18.0.1:53112] PHP Fatal error:  Uncaught Error: Call to undefined function bin2hexrandom_bytes() in /var/www/html/app/functions.php:12\nStack trace:\n#0 /var/www/html/regist.php(6): createtoken()\n#1 {main}\n  thrown in /var/www/html/app/functions.php on line 12, referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:12:14.028191 2022] [php:notice] [pid 19] [client 172.18.0.1:53124] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:12:17.251495 2022] [php:notice] [pid 19] [client 172.18.0.1:53124] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened.
+[Tue Nov 08 20:13:09.639563 2022] [php:notice] [pid 17] [client 172.18.0.1:53136] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:13:11.685326 2022] [php:notice] [pid 17] [client 172.18.0.1:53136] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened.
+[Tue Nov 08 20:14:34.656160 2022] [php:notice] [pid 18] [client 172.18.0.1:53148] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened.
+[Tue Nov 08 20:15:03.418117 2022] [php:notice] [pid 22] [client 172.18.0.1:53156] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/regist.php
+[Tue Nov 08 20:15:05.268475 2022] [php:notice] [pid 22] [client 172.18.0.1:53156] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:15:09.622315 2022] [php:notice] [pid 22] [client 172.18.0.1:53156] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:17:44.856165 2022] [php:notice] [pid 17] [client 172.18.0.1:53174] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:17:47.184126 2022] [php:notice] [pid 17] [client 172.18.0.1:53174] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:17:50.380002 2022] [php:notice] [pid 17] [client 172.18.0.1:53174] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened.
+[Tue Nov 08 20:18:41.119757 2022] [php:notice] [pid 20] [client 172.18.0.1:53190] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:18:43.547936 2022] [php:notice] [pid 20] [client 172.18.0.1:53190] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:18:47.503173 2022] [php:notice] [pid 20] [client 172.18.0.1:53190] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened.
+[Tue Nov 08 20:21:57.886044 2022] [php:notice] [pid 18] [client 172.18.0.1:53214] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:22:01.488985 2022] [php:notice] [pid 18] [client 172.18.0.1:53214] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened.
+[Tue Nov 08 20:22:15.528607 2022] [php:notice] [pid 23] [client 172.18.0.1:53226] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/regist.php
+[Tue Nov 08 20:22:16.781645 2022] [php:notice] [pid 23] [client 172.18.0.1:53226] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/dbtest.php
+[Tue Nov 08 20:22:53.595911 2022] [php:notice] [pid 20] [client 172.18.0.1:53240] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/regist.php
+[Tue Nov 08 20:23:06.920836 2022] [php:notice] [pid 17] [client 172.18.0.1:53250] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/registProcess.php
+>>>>>>> 20221107hasegawa
