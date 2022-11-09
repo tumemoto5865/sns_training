@@ -13,11 +13,11 @@ createToken();
     <span class="input-form">
     <p>
       <label for ="id">ID</label>
-      <input type="text" pattern="^[a-zA-Z0-9\S_]+$" name="user_id" id="id">※半角英数字とアンダースコアのみです<br />
+      <input type="text" pattern="^[a-zA-Z0-9_]+$" name="user_id" id="id">※半角英数字とアンダースコアのみです<br />
     </p>
     <p>
       <label for ="pw">パスワード</label>
-      <input type="password"  pattern="^[a-zA-Z0-9]+$" name="user_pw" id="pw">※半角英数字とアンダースコアのみです<br />
+      <input type="password"  pattern="^[a-zA-Z0-9_]+$" name="user_pw" id="pw">※半角英数字とアンダースコアのみです<br />
     </p>
 
     <p>
