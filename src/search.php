@@ -13,7 +13,7 @@ createToken();
     <span class="input-form">
     <p>
       <label for ="user_id">ID</label>
-      <input type="text" pattern="^[a-zA-Z0-9\S_]+$" name="user_id" id="user_id"><br />
+      <input type="text" name="user_id" id="user_id"><br />
     </p>
     <p>
       <label for ="user_name">お名前</label>
@@ -25,11 +25,11 @@ createToken();
     </p>
     <p>    
       <label for ="user_tel">電話番号</label>
-      <input type=text pattern="^[0-9]+$" name="user_tel" id="user_tel"><br />
+      <input type=text name="user_tel" id="user_tel"><br />
     </p>
     <p>    
       <label for ="user_mail">メールアドレス</label>
-      <input type=text pattern="^[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-_\.]+$" name="user_mail" id="user_mail"<br />
+      <input type=text name="user_mail" id="user_mail"<br />
     </p>
     </span>
     <p>

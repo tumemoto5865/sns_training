@@ -58,13 +58,16 @@ $regist_info = [
 //確認用のパスワードは別に受け取り
 $user_pw_check = hsc(filter_input(INPUT_POST, "user_pw_check"));
 
-//重複ID
+//重複IDチェック
 $stmt = $pdo->prepare(
   "SELECT ID FROM user_data WHERE ID = ?"
 );
 $stmt->bindValue(1, $regist_info["ID"] , PDO::PARAM_STR);
 $stmt->execute();
 $registedId = $stmt->fetch();
+
+// print_r($registedId); //テスト
+
 
 //未入力項目チェック
 if (in_array("", $regist_info, true)) { ?>
@@ -83,7 +86,8 @@ if (in_array("", $regist_info, true)) { ?>
   <button type="button" onclick="history.back()" id="submit">戻る</button>
 <?php
 //重複チェック
-} elseif ($regist_info["ID"] === $registedId["ID"]) {
+//bool型を返す関数に対して配列オフセットを渡すと警告文が出る
+} elseif (empty($registedId)===false) {
   ?>
     <p style="text-align: center; margin-top: 80px; font-size: large;">そのIDは既に登録されているため使えません。</p>
   </div>

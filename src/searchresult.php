@@ -28,31 +28,37 @@ try {
 <?php 
 validateToken();
 //POST情報取得
-$serch_info = [
-    "ID"=>hsc(filter_input(INPUT_POST, "user_id")),
-    "お名前"=>hsc(filter_input(INPUT_POST, "user_name")),
-    "住所"=>hsc(filter_input(INPUT_POST, "user_ad")),
-    "電話番号"=>hsc(trim(filter_input(INPUT_POST, "user_tel"))),
-    "メールアドレス"=>hsc(trim(filter_input(INPUT_POST, "user_mail")))
+$search_info = [
+    "ID"=>hsc("%" . filter_input(INPUT_POST, "user_id") . "%"),
+    "お名前"=>hsc("%" . filter_input(INPUT_POST, "user_name") . "%"),
+    "住所"=>hsc("%" . filter_input(INPUT_POST, "user_ad") . "%"),
+    "電話番号"=>hsc(trim("%" . filter_input(INPUT_POST, "user_tel")) . "%"),
+    "メールアドレス"=>hsc(trim("%" . filter_input(INPUT_POST, "user_mail")) . "%")
     ];
 
-//サーチ情報挿入予定
+// var_dump($search_info);//テスト
 
 //クエリに変数入れたいのでプリペアドステートメントを使う(メモ)
-$stmt = $pdo->query(
-    "SELECT * FROM user_data"
-    WHERE ID LIKE "ID");
-$stmt->bindValue(1, , PDO::PARAM_STR);
+$stmt = $pdo->prepare('SELECT ID, お名前, 住所, 電話番号, メールアドレス FROM user_data WHERE 
+        ID LIKE ? AND
+        お名前 LIKE ? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メールアドレス LIKE ? ORDER BY お名前');
+$stmt->bindValue(1, $search_info["ID"], PDO::PARAM_STR);
+$stmt->bindValue(2, $search_info["お名前"], PDO::PARAM_STR);
+$stmt->bindValue(3, $search_info["住所"], PDO::PARAM_STR);
+$stmt->bindValue(4, $search_info["電話番号"], PDO::PARAM_STR);
+$stmt->bindValue(5, $search_info["メールアドレス"], PDO::PARAM_STR);
 $stmt->execute();
+$searchResults = $stmt->fetchAll();
 
-$results = $stmt->fetchAll();
-
-// var_dump($results);//テスト
+// var_dump($searchResults);//テスト
 
 ?>
 
 <main>
-    <h1>検索フォーム</h1>
+    <h1>検索結果</h1>
     
     <!-- 検索結果結果表示開始 -->
     <table>
@@ -64,13 +70,17 @@ $results = $stmt->fetchAll();
             <th>メールアドレス</th>
         </tr>
 <!-- これをforeachで増やす。 -->
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+        <?php 
+        foreach ($searchResults as $personalData) {
+            ?><tr>
+                <td><?= $personalData["ID"]?></td>
+                <td><?= $personalData["お名前"]?></td>
+                <td><?= $personalData["住所"]?></td>
+                <td><?= $personalData["電話番号"]?></td>
+                <td><?= $personalData["メールアドレス"]?></td>
+            </tr><?php
+        }
+        ?>
 <!-- 増やすのはここまで -->
     </table>
     <!-- 検索結果表示終了 -->
@@ -78,7 +88,7 @@ $results = $stmt->fetchAll();
 
   
 
-</form>
+<p><button type="button" onclick="history.back()" id="submit">戻る</button></p>
 </p>
 <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
 </main>
