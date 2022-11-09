@@ -2,11 +2,8 @@
 
 require('app/functions.php');
 include('app/_parts/_header.php');
-<<<<<<< HEAD
-=======
 
-createtoken();
->>>>>>> 20221107hasegawa
+createToken();
 ?>
   <h1>登録フォーム</h1>
   <div class="main">
@@ -46,10 +43,7 @@ createtoken();
     </p>
     </span>
     <p>
-<<<<<<< HEAD
-=======
       <input type="hidden" name="token" value="<?= hsc($_SESSION['token']);?>">
->>>>>>> 20221107hasegawa
       <input type="submit" value="登録" id="submit">
     </div>
     </p>

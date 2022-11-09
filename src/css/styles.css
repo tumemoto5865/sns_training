@@ -20,6 +20,51 @@ main p{
   white-space: nowrap
   }
 
+table {
+  width: 80%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: solid 1px #000;
+  border-spacing: 0;
+  padding: 0;
+  }
+
+th, td {
+  /* padding: 0px 0px;
+  margin: 0px 0px; */
+  border: solid 1px #000;
+  text-align: left;
+}
+
+th {
+  background-color: #C5C5FF;
+  font-weight: normal;
+  text-align: center;
+  font-size: normal;
+}
+
+tr {
+  font-size: small;
+}
+
+th:nth-child(1) {
+  width: 12%;
+}
+th:nth-child(2) {
+  width: 10%;
+}
+th:nth-child(3) {
+  width: 48%;
+}
+th:nth-child(4) {
+  width: 10%;
+}
+th:nth-child(5) {
+  width: 20%;
+}
+
+
+
 
 form .input-form p {
   white-space: nowrap;
@@ -28,6 +73,10 @@ form .input-form p {
   border-width: 1px;
   width: 100%;
   text-align: left;
+}
+
+li {
+list-style: none;
 }
 
 label{

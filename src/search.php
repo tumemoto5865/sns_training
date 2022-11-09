@@ -1,36 +1,39 @@
 <?php
 require('app/functions.php');
 include('app/_parts/_header.php');
+
+createToken();
 ?>
 <main>
-<h1>検索</h1>
+<h1>検索フォーム</h1>
   <div class="main">
 
 
-    <form action="registProcess.php" method="post">
+    <form action="searchresult.php" method="post">
     <span class="input-form">
     <p>
-      <label for ="id">ID</label>
-      <input type="text" pattern="^[a-zA-Z0-9\S_]+$" name="user_id" id="id"><br />
+      <label for ="user_id">ID</label>
+      <input type="text" pattern="^[a-zA-Z0-9\S_]+$" name="user_id" id="user_id"><br />
     </p>
     <p>
-      <label for ="name">お名前</label>
-      <input type=text name="user_name" id="name"><br />
+      <label for ="user_name">お名前</label>
+      <input type=text name="user_name" id="user_name"><br />
     </p>
     <p>
-      <label for ="ad">住所</label>
-      <input type=text name="user_ad" id="ad"><br />
+      <label for ="user_ad">住所</label>
+      <input type=text name="user_ad" id="user_ad"><br />
     </p>
     <p>    
-      <label for ="tel">電話番号</label>
-      <input type=text pattern="^[0-9]+$" name="user_tel" id="tel"><br />
+      <label for ="user_tel">電話番号</label>
+      <input type=text pattern="^[0-9]+$" name="user_tel" id="user_tel"><br />
     </p>
     <p>    
-      <label for ="mail">メールアドレス</label>
-      <input type=text pattern="^[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-_\.]+$" name="user_mail" id="mail"<br />
+      <label for ="user_mail">メールアドレス</label>
+      <input type=text pattern="^[a-zA-Z0-9-_\.]+@[a-zA-Z0-9-_\.]+$" name="user_mail" id="user_mail"<br />
     </p>
     </span>
     <p>
+      <input type="hidden" name="token" value="<?= hsc($_SESSION['token']);?>">
       <input type="submit" value="検索" id="submit">
     </div>
     </p>
