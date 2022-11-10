@@ -51,9 +51,11 @@ $regist_info = [
   "ID"=>hsc(filter_input(INPUT_POST, "user_id")),
   "パスワード"=>hsc(filter_input(INPUT_POST, "user_pw")),
   "お名前"=>hsc(filter_input(INPUT_POST, "user_name")),
+  "性別コード"=>hsc(filter_input(INPUT_POST, "user_sex")),
   "住所"=>hsc(filter_input(INPUT_POST, "user_ad")),
   "電話番号"=>hsc(trim(filter_input(INPUT_POST, "user_tel"))),
-  "メールアドレス"=>hsc(trim(filter_input(INPUT_POST, "user_mail")))
+  "メールアドレス"=>hsc(trim(filter_input(INPUT_POST, "user_mail"))),
+  "モバイル端末コード"=>hsc(trim(filter_input(INPUT_POST, "user_mobDev")))
 ];
 //確認用のパスワードは別に受け取り
 $user_pw_check = hsc(filter_input(INPUT_POST, "user_pw_check"));
@@ -105,11 +107,16 @@ if (in_array("", $regist_info, true)) { ?>
   //トランザクション開始
   try{
     $pdo->beginTransaction();
-      $stmt = $pdo->prepare('INSERT INTO user_data (ID, パスワード, お名前, 住所, 電話番号, メールアドレス) VALUES (?, ?, ?, ?, ?, ?)');
+      $stmt = $pdo->prepare('INSERT INTO user_data (ID, パスワード, お名前, 性別コード, 住所, 電話番号, メールアドレス, モバイル端末コード) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
       $i = 1;
       foreach($regist_info as $split_info) {
         // echo ($i . PHP_EOL);//テスト用
-        $stmt->bindValue($i, $split_info , PDO::PARAM_STR);
+        if (gettype($split_info) === "integer") {//INTの場合。何か型を選ばない方法とかあるのかな？
+          $stmt->bindValue($i, $split_info , PDO::PARAM_INT);
+
+        } else {//stringはこちらへ誘導
+          $stmt->bindValue($i, $split_info , PDO::PARAM_STR);
+        }
         $i++;
         // echo ($split_info . PHP_EOL);//テスト用
         

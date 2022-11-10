@@ -20,6 +20,13 @@ createToken();
       <input type=text name="user_name" id="user_name"><br />
     </p>
     <p>
+      <label for="user_sex">性別</label>
+      <input type="radio" name="user_sex" value="3" id="user_sex3" checked>全て
+      <input type="radio" name="user_sex" value="1" id="user_sex1" style="margin-left: 48px;">男性
+      <input type="radio" name="user_sex" value="2" id="user_sex2">女性<br />
+      
+    </p>
+    <p>
       <label for ="user_ad">住所</label>
       <input type=text name="user_ad" id="user_ad"><br />
     </p>
@@ -30,6 +37,15 @@ createToken();
     <p>    
       <label for ="user_mail">メールアドレス</label>
       <input type=text name="user_mail" id="user_mail"<br />
+    </p>
+    <p>
+    <label for="user_mobDev">モバイル端末</label>
+    <select name="user_mobDev" id=user_mobDev>
+      <option value="4">全て</option>
+      <option value="1">iphone</option>
+      <option value="2">android</option>
+      <option value="3">その他</option>
+    </select><br />
     </p>
     </span>
     <p>

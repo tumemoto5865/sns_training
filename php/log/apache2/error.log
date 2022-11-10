@@ -844,3 +844,299 @@ Cannot load Xdebug - it was already loaded
 [Tue Nov 08 20:22:53.595911 2022] [php:notice] [pid 20] [client 172.18.0.1:53240] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/regist.php
 [Tue Nov 08 20:23:06.920836 2022] [php:notice] [pid 17] [client 172.18.0.1:53250] Xdebug: [Log Files] File '/var/log/xdebug.log' could not be opened., referer: http://localhost:8010/registProcess.php
 >>>>>>> 20221107hasegawa
+Cannot load Xdebug - it was already loaded
+[09-Nov-2022 21:14:49 Asia/Tokyo] PHP Deprecated:  PHP Startup: Use of mbstring.internal_encoding is deprecated in Unknown on line 0
+[Wed Nov 09 12:14:49.388447 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.12 configured -- resuming normal operations
+[Wed Nov 09 12:14:49.388844 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Nov 09 12:15:00.585098 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[09-Nov-2022 21:24:15 Asia/Tokyo] PHP Deprecated:  PHP Startup: Use of mbstring.internal_encoding is deprecated in Unknown on line 0
+[Wed Nov 09 12:24:15.386561 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.12 configured -- resuming normal operations
+[Wed Nov 09 12:24:15.386946 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Nov 09 12:27:51.285834 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[09-Nov-2022 21:29:41 Asia/Tokyo] PHP Deprecated:  PHP Startup: Use of mbstring.internal_encoding is deprecated in Unknown on line 0
+[Wed Nov 09 12:29:41.128545 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.12 configured -- resuming normal operations
+[Wed Nov 09 12:29:41.128903 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Nov 09 12:29:55.437915 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[09-Nov-2022 22:06:50 Asia/Tokyo] PHP Deprecated:  PHP Startup: Use of mbstring.internal_encoding is deprecated in Unknown on line 0
+[Wed Nov 09 13:06:51.158222 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.12 configured -- resuming normal operations
+[Wed Nov 09 13:06:51.158520 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Nov 09 13:07:46.697202 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[09-Nov-2022 22:20:18 Asia/Tokyo] PHP Deprecated:  PHP Startup: Use of mbstring.internal_encoding is deprecated in Unknown on line 0
+[Wed Nov 09 13:20:18.779406 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.12 configured -- resuming normal operations
+[Wed Nov 09 13:20:18.783479 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Wed Nov 09 13:43:08.191303 2022] [mpm_prefork:notice] [pid 1] AH00170: caught SIGWINCH, shutting down gracefully
+Cannot load Xdebug - it was already loaded
+[10-Nov-2022 01:42:26 Asia/Tokyo] PHP Deprecated:  PHP Startup: Use of mbstring.internal_encoding is deprecated in Unknown on line 0
+[Wed Nov 09 16:42:27.503160 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.12 configured -- resuming normal operations
+[Wed Nov 09 16:42:27.503565 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[10-Nov-2022 05:44:24 Asia/Tokyo] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/registProcess.php on line 58
+[10-Nov-2022 06:04:41 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:05:48 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:05:52 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:07:31 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:08:36 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:09:44 Asia/Tokyo] PHP Deprecated:  trim(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/searchresult.php on line 38
+[10-Nov-2022 06:09:44 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:11:18 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 06:11:18 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:11:56 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 06:11:56 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:12:31 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 06:12:31 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:26:14 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 06:26:14 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:29:44 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 06:29:44 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:29:58 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 06:29:58 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:31:41 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:33:18 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:42:20 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:43:49 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:56:32 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:57:18 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:57:59 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:58:11 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:59:07 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 06:59:52 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 07:00:30 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ORDER BY お名前' at line 8 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 07:18:11 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:19:07 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:19:11 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:19:46 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:20:12 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:20:17 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:20:24 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:21:26 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:22:01 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:23:07 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:23:59 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:24:36 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:25:06 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:51
+Stack trace:
+#0 /var/www/html/searchresult.php(51): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 51
+[10-Nov-2022 07:25:17 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:52
+Stack trace:
+#0 /var/www/html/searchresult.php(52): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 52
+[10-Nov-2022 07:26:37 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:52
+Stack trace:
+#0 /var/www/html/searchresult.php(52): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 52
+[10-Nov-2022 07:33:34 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:52
+Stack trace:
+#0 /var/www/html/searchresult.php(52): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 52
+[10-Nov-2022 07:36:03 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:52
+Stack trace:
+#0 /var/www/html/searchresult.php(52): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 52
+[10-Nov-2022 07:36:18 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+        メã' at line 4 in /var/www/html/searchresult.php:52
+Stack trace:
+#0 /var/www/html/searchresult.php(52): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 52

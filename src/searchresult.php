@@ -31,29 +31,44 @@ validateToken();
 $search_info = [
     "ID"=>hsc("%" . filter_input(INPUT_POST, "user_id") . "%"),
     "お名前"=>hsc("%" . filter_input(INPUT_POST, "user_name") . "%"),
+    "性別コード"=>filter_input(INPUT_POST, "user_sex"),
     "住所"=>hsc("%" . filter_input(INPUT_POST, "user_ad") . "%"),
     "電話番号"=>hsc(trim("%" . filter_input(INPUT_POST, "user_tel")) . "%"),
-    "メールアドレス"=>hsc(trim("%" . filter_input(INPUT_POST, "user_mail")) . "%")
+    "メールアドレス"=>hsc(trim("%" . filter_input(INPUT_POST, "user_mail")) . "%"),
+    "モバイル端末コード"=>filter_input(INPUT_POST, "user_mobDev")
     ];
 
-// var_dump($search_info);//テスト
+// if ($search_info["性別コード"] === "3") {
+//     $search_info["性別コード"] = "CAST 1";
+// }
+// if ($search_info["モバイル端末コード"] === "4") {
+//     $search_info["モバイル端末コード"] = 4;
+// }
+
+var_dump($search_info);//テスト
 
 //クエリに変数入れたいのでプリペアドステートメントを使う(メモ)
-$stmt = $pdo->prepare('SELECT ID, お名前, 住所, 電話番号, メールアドレス FROM user_data WHERE 
+echo ("ok");
+$stmt = $pdo->prepare('SELECT ID, お名前, 性別コード 住所, 電話番号, メールアドレス, モバイル端末コード FROM user_data WHERE 
         ID LIKE ? AND
         お名前 LIKE ? AND
+        性別コード ()mnmnvbvb ? AND
         住所 LIKE ? AND
         電話番号 LIKE ? AND
-        メールアドレス LIKE ? ORDER BY お名前');
+        メールアドレス LIKE ? AND
+        モバイル端末コード () IS NOT FALSE 
+        ORDER BY お名前');
 $stmt->bindValue(1, $search_info["ID"], PDO::PARAM_STR);
 $stmt->bindValue(2, $search_info["お名前"], PDO::PARAM_STR);
-$stmt->bindValue(3, $search_info["住所"], PDO::PARAM_STR);
-$stmt->bindValue(4, $search_info["電話番号"], PDO::PARAM_STR);
-$stmt->bindValue(5, $search_info["メールアドレス"], PDO::PARAM_STR);
+$stmt->bindValue(3, $search_info["性別コード"], PDO::PARAM_STR);
+$stmt->bindValue(4, $search_info["住所"], PDO::PARAM_STR);
+$stmt->bindValue(5, $search_info["電話番号"], PDO::PARAM_STR);
+$stmt->bindValue(6, $search_info["メールアドレス"], PDO::PARAM_STR);
+$stmt->bindValue(7, $search_info["モバイル端末コード"], PDO::PARAM_STR);
 $stmt->execute();
 $searchResults = $stmt->fetchAll();
+var_dump($searchResults);//テスト
 
-// var_dump($searchResults);//テスト
 
 ?>
 
@@ -75,9 +90,11 @@ $searchResults = $stmt->fetchAll();
             ?><tr>
                 <td><?= $personalData["ID"]?></td>
                 <td><?= $personalData["お名前"]?></td>
+                <td><?= $personalData["性別コード"]?></td>
                 <td><?= $personalData["住所"]?></td>
                 <td><?= $personalData["電話番号"]?></td>
                 <td><?= $personalData["メールアドレス"]?></td>
+                <td><?= $personalData["モバイル端末コード"]?></td>
             </tr><?php
         }
         ?>
