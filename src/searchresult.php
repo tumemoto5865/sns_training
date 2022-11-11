@@ -98,8 +98,6 @@ $search_results = $stmt->fetchAll();
     <!-- よく見る検索結果件数に応じてページを切り替えになる仕組みを作る。 -->
 
 
-
-
     <p><button type="button" onclick="history.back()" id="submit">戻る</button></p>
     </p>
     <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>

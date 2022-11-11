@@ -1,3 +1,4 @@
 data/
 .history/
-error.log/
+*.log
+xdebug.log
