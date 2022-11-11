@@ -1,11 +1,11 @@
-body{
+body {
   background-color: #DDD;
   font-size: large;
   margin: 0 0;
   padding: 0 0;
 }
 
-h1{
+h1 {
   display: block;
   text-align: center;
   font-size: 150%;
@@ -15,12 +15,12 @@ h1{
 
 
 
-main p{
+main p {
   display: block;
   /* margin: 0 auto; */
   text-align: center;
   white-space: nowrap
-  }
+}
 
 table {
   width: 80%;
@@ -29,41 +29,62 @@ table {
   border: solid 1px #000;
   border-spacing: 0;
   padding: 0;
-  }
+}
 
-th, td {
+th,
+td {
   /* padding: 0px 0px;
   margin: 0px 0px; */
   border: solid 1px #000;
-  text-align: left;
 }
 
 th {
   background-color: #C5C5FF;
   font-weight: normal;
-  text-align: center;
   font-size: normal;
 }
 
 tr {
-  font-size: small;
+  font-size: x-small;
 }
 
 th:nth-child(1) {
-  width: 12%;
+  width: 9%;
 }
+
 th:nth-child(2) {
-  width: 10%;
+  width: 11%;
 }
+
 th:nth-child(3) {
-  width: 48%;
+  width: 6%;
+  text-align: center;
 }
+
 th:nth-child(4) {
+  width: auto;
+}
+
+th:nth-child(5) {
+  width: 9%;
+}
+
+th:nth-child(6) {
+  width: 15%;
+}
+
+th:nth-child(7) {
   width: 10%;
 }
-th:nth-child(5) {
-  width: 20%;
+
+td:nth-child(3) {
+  text-align: center;
 }
+
+td:nth-child(7) {
+  text-align: center;
+}
+
 
 
 
@@ -79,10 +100,10 @@ form .input-form p {
 
 
 li {
-list-style: none;
+  list-style: none;
 }
 
-label{
+label {
   display: block;
   text-align: right;
   min-width: 33%;
@@ -90,11 +111,12 @@ label{
 
 }
 
-#sex{
-  text-align:left
+#sex {
+  text-align: left
 }
 
-input[type="text"],input[type=password] {
+input[type="text"],
+input[type=password] {
   width: 33%;
   min-width: 300px;
   border-style: solid;
@@ -107,14 +129,14 @@ input[type="text"],input[type=password] {
 }
 
 
-#submit{
+#submit {
   display: block;
   height: 32px;
   width: 120px;
   border-radius: 8px;
   border-width: 1px;
   background-color: #BBB;
-  margin:0 auto;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -122,16 +144,15 @@ input[type="text"],input[type=password] {
   background-color: #DDD;
 }
 
-.input-invalid{
-display: flex;
-justify-content: center;
-text-align: left;
+.input-invalid {
+  display: flex;
+  justify-content: center;
+  text-align: left;
 }
 
 
 button {
-  display:block;
+  display: block;
   margin: 8px auto;
-  text-align:center;
+  text-align: center;
 }
-

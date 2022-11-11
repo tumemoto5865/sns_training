@@ -2077,3 +2077,1506 @@
 
 [18] Log closed at 2022-11-09 22:36:18.691338
 
+[19] Log opened at 2022-11-10 07:05:56.821068
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/index.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:05:57.167697
+
+[23] Log opened at 2022-11-10 07:06:06.097528
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:06:06.247640
+
+[23] Log opened at 2022-11-10 07:06:11.079691
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/dbtest.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:06:11.104488
+
+[23] Log opened at 2022-11-10 07:06:12.306971
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:06:12.326938
+
+[18] Log opened at 2022-11-10 07:07:01.023441
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:07:01.066298
+
+[19] Log opened at 2022-11-10 07:07:08.381473
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:07:08.439293
+
+[19] Log opened at 2022-11-10 07:07:10.205412
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:07:10.224419
+
+[19] Log opened at 2022-11-10 07:07:12.476100
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:07:12.504239
+
+[23] Log opened at 2022-11-10 07:07:41.228419
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:07:41.260365
+
+[18] Log opened at 2022-11-10 07:08:24.098579
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:08:24.130833
+
+[21] Log opened at 2022-11-10 07:08:47.409887
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:08:47.450123
+
+[19] Log opened at 2022-11-10 07:10:25.761362
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:10:25.790889
+
+[23] Log opened at 2022-11-10 07:16:19.140685
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:16:19.172569
+
+[18] Log opened at 2022-11-10 07:16:56.780870
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:16:56.808252
+
+[21] Log opened at 2022-11-10 07:17:19.613997
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:17:19.644940
+
+[19] Log opened at 2022-11-10 07:28:27.584041
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:28:27.621357
+
+[19] Log opened at 2022-11-10 07:28:29.933578
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:28:29.965183
+
+[20] Log opened at 2022-11-10 07:36:40.822978
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:36:40.855746
+
+[20] Log opened at 2022-11-10 07:36:44.600413
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:36:44.618609
+
+[20] Log opened at 2022-11-10 07:36:45.614780
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:36:45.684533
+
+[17] Log opened at 2022-11-10 07:37:49.632477
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 07:37:49.711945
+
+[19] Log opened at 2022-11-10 07:43:26.336111
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:43:26.476549
+
+[22] Log opened at 2022-11-10 07:44:17.446859
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:44:17.480984
+
+[20] Log opened at 2022-11-10 07:45:19.986700
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:45:20.062027
+
+[17] Log opened at 2022-11-10 07:45:39.865770
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 07:45:39.943031
+
+[19] Log opened at 2022-11-10 07:45:50.213075
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:45:50.312126
+
+[22] Log opened at 2022-11-10 07:46:29.827739
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:46:29.855826
+
+[22] Log opened at 2022-11-10 07:46:32.715038
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:46:32.781646
+
+[18] Log opened at 2022-11-10 07:47:16.959973
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:47:16.991957
+
+[21] Log opened at 2022-11-10 07:47:44.866985
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:47:44.916958
+
+[21] Log opened at 2022-11-10 07:47:48.017012
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:47:48.044112
+
+[21] Log opened at 2022-11-10 07:47:49.045015
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:47:49.064946
+
+[21] Log opened at 2022-11-10 07:47:52.276147
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:47:52.299259
+
+[21] Log opened at 2022-11-10 07:47:53.658022
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:47:53.678012
+
+[21] Log opened at 2022-11-10 07:47:55.928752
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:47:55.950959
+
+[21] Log opened at 2022-11-10 07:47:57.541081
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:47:57.559930
+
+[21] Log opened at 2022-11-10 07:47:59.681145
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:47:59.702915
+
+[21] Log opened at 2022-11-10 07:48:02.021619
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:48:02.039215
+
+[22] Log opened at 2022-11-10 07:48:19.886654
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:48:19.913937
+
+[18] Log opened at 2022-11-10 07:50:29.302345
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:50:29.334314
+
+[18] Log opened at 2022-11-10 07:50:33.850708
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:50:33.873416
+
+[20] Log opened at 2022-11-10 07:51:10.564927
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:51:10.601517
+
+[17] Log opened at 2022-11-10 07:51:39.677281
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 07:51:39.746947
+
+[19] Log opened at 2022-11-10 07:52:10.213294
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:52:10.242844
+
+[18] Log opened at 2022-11-10 07:52:52.916847
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:52:52.950933
+
+[20] Log opened at 2022-11-10 07:53:01.258159
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:53:01.279983
+
+[17] Log opened at 2022-11-10 07:53:17.532057
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 07:53:17.553789
+
+[19] Log opened at 2022-11-10 07:53:22.611633
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:53:22.634170
+
+[18] Log opened at 2022-11-10 07:53:30.732785
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:53:30.754695
+
+[20] Log opened at 2022-11-10 07:54:05.636841
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:54:05.666639
+
+[20] Log opened at 2022-11-10 07:54:10.440730
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:54:10.463942
+
+[21] Log opened at 2022-11-10 07:54:15.853341
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:54:15.880015
+
+[22] Log opened at 2022-11-10 07:54:21.868177
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:54:21.899872
+
+[23] Log opened at 2022-11-10 07:54:45.574135
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:54:45.608284
+
+[20] Log opened at 2022-11-10 07:55:03.909508
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:55:03.933239
+
+[20] Log opened at 2022-11-10 07:55:08.857090
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:55:08.881019
+
+[20] Log opened at 2022-11-10 07:55:13.586148
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:55:13.609614
+
+[22] Log opened at 2022-11-10 07:55:22.619743
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:55:22.641949
+
+[23] Log opened at 2022-11-10 07:55:29.162135
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:55:29.185183
+
+[21] Log opened at 2022-11-10 07:55:38.123730
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:55:38.147160
+
+[20] Log opened at 2022-11-10 07:55:48.541986
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:55:48.563890
+
+[22] Log opened at 2022-11-10 07:55:59.924601
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:55:59.957939
+
+[23] Log opened at 2022-11-10 07:56:06.277350
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:56:06.306249
+
+[21] Log opened at 2022-11-10 07:56:22.842614
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:56:22.871114
+
+[21] Log opened at 2022-11-10 07:56:25.271397
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:56:25.292708
+
+[19] Log opened at 2022-11-10 07:56:34.298346
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:56:34.351532
+
+[18] Log opened at 2022-11-10 07:56:40.338035
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:56:40.363085
+
+[17] Log opened at 2022-11-10 07:56:47.410866
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 07:56:47.441273
+
+[21] Log opened at 2022-11-10 07:56:53.557045
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:56:53.578052
+
+[19] Log opened at 2022-11-10 07:57:24.934651
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 07:57:24.965765
+
+[18] Log opened at 2022-11-10 07:57:38.940644
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:57:38.967912
+
+[17] Log opened at 2022-11-10 07:57:53.447227
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 07:57:53.481877
+
+[21] Log opened at 2022-11-10 07:57:59.682650
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:57:59.704577
+
+[21] Log opened at 2022-11-10 07:58:03.713596
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 07:58:03.735883
+
+[20] Log opened at 2022-11-10 07:58:10.481757
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 07:58:10.510255
+
+[22] Log opened at 2022-11-10 07:58:15.658571
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:58:15.688821
+
+[23] Log opened at 2022-11-10 07:58:22.778002
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:58:22.810011
+
+[23] Log opened at 2022-11-10 07:58:28.071097
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 07:58:28.091886
+
+[18] Log opened at 2022-11-10 07:59:07.588601
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:59:07.622823
+
+[18] Log opened at 2022-11-10 07:59:11.054720
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 07:59:11.077048
+
+[22] Log opened at 2022-11-10 07:59:40.299659
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:59:40.329402
+
+[22] Log opened at 2022-11-10 07:59:42.679318
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:59:42.702039
+
+[22] Log opened at 2022-11-10 07:59:45.823093
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:59:45.863195
+
+[22] Log opened at 2022-11-10 07:59:50.743784
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:59:50.761945
+
+[22] Log opened at 2022-11-10 07:59:51.686292
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 07:59:51.744631
+
+[18] Log opened at 2022-11-10 08:03:46.939196
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 08:03:46.973511
+
+[21] Log opened at 2022-11-10 08:06:52.080094
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 08:06:52.109149
+
+[20] Log opened at 2022-11-10 08:07:12.887444
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 08:07:12.923901
+
+[22] Log opened at 2022-11-10 08:07:33.935417
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 08:07:33.966456
+
+[18] Log opened at 2022-11-10 08:09:48.589969
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 08:09:48.618548
+
+[21] Log opened at 2022-11-10 08:10:01.399437
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 08:10:01.453477
+
+[20] Log opened at 2022-11-10 08:10:20.152374
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 08:10:20.177983
+
+[22] Log opened at 2022-11-10 08:11:29.637424
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 08:11:29.669136
+
+[18] Log opened at 2022-11-10 08:12:09.047148
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 08:12:09.080360
+
+[21] Log opened at 2022-11-10 08:12:32.855122
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 08:12:32.882844
+
+[20] Log opened at 2022-11-10 08:13:06.514830
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 08:13:06.545655
+
+[22] Log opened at 2022-11-10 08:13:15.764868
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 08:13:15.786783
+
+[18] Log opened at 2022-11-10 08:13:26.565637
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 08:13:26.586883
+
+[21] Log opened at 2022-11-10 08:13:48.828257
+[21] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[21] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[21] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="21"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[21] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[21] Log closed at 2022-11-10 08:13:48.850254
+
+[20] Log opened at 2022-11-10 08:14:17.261955
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 08:14:17.283518
+
+[22] Log opened at 2022-11-10 08:15:32.504923
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 08:15:32.543231
+
+[18] Log opened at 2022-11-10 08:15:39.156728
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 08:15:39.195025
+
+[18] Log opened at 2022-11-10 08:15:43.928896
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 08:15:43.986457
+
+[17] Log opened at 2022-11-10 08:15:51.405032
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 08:15:51.432051
+
+[19] Log opened at 2022-11-10 08:16:03.578747
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 08:16:03.608926
+
+[23] Log opened at 2022-11-10 09:42:10.179679
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/dbtest.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 09:42:10.249523
+
+[23] Log opened at 2022-11-10 09:42:11.379798
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/dbtest.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 09:42:11.406305
+
+[23] Log opened at 2022-11-10 09:42:12.599159
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 09:42:12.619617
+
+[17] Log opened at 2022-11-10 09:42:39.013294
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 09:42:39.071544
+
+[17] Log opened at 2022-11-10 09:42:40.652193
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 09:42:40.672661
+
+[17] Log opened at 2022-11-10 09:42:45.202568
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 09:42:45.231751
+
+[18] Log opened at 2022-11-10 10:15:10.636413
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 10:15:10.676143
+
+[18] Log opened at 2022-11-10 10:15:11.885052
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 10:15:11.902485
+
+[18] Log opened at 2022-11-10 10:15:14.299762
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 10:15:14.333467
+
+[18] Log opened at 2022-11-10 10:15:18.741474
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 10:15:18.760448
+
+[18] Log opened at 2022-11-10 10:15:20.739421
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 10:15:20.768759
+
+[18] Log opened at 2022-11-10 10:15:22.086105
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 10:15:22.106448
+
+[20] Log opened at 2022-11-10 10:15:31.787380
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:15:31.833142
+
+[20] Log opened at 2022-11-10 10:15:33.285676
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:15:33.303679
+
+[20] Log opened at 2022-11-10 10:15:35.219574
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:15:35.236891
+
+[20] Log opened at 2022-11-10 10:15:36.277655
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:15:36.313346
+
+[20] Log opened at 2022-11-10 10:15:37.656784
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:15:37.675518
+
+[18] Log opened at 2022-11-10 10:16:13.864633
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 10:16:13.894128
+
+[18] Log opened at 2022-11-10 10:16:18.468891
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 10:16:18.486137
+
+[19] Log opened at 2022-11-10 10:16:35.969835
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:16:36.024785
+
+[17] Log opened at 2022-11-10 10:16:50.270085
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 10:16:50.298476
+
+[23] Log opened at 2022-11-10 10:16:57.592709
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 10:16:57.630737
+
+[18] Log opened at 2022-11-10 10:17:07.424908
+[18] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[18] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[18] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="18"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[18] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[18] Log closed at 2022-11-10 10:17:07.442882
+
+[19] Log opened at 2022-11-10 10:17:44.922037
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:17:44.958828
+
+[19] Log opened at 2022-11-10 10:17:46.049968
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:17:46.075394
+
+[19] Log opened at 2022-11-10 10:17:47.668504
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:17:47.719430
+
+[19] Log opened at 2022-11-10 10:17:48.481247
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:17:48.505664
+
+[19] Log opened at 2022-11-10 10:17:50.164725
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:17:50.183103
+
+[19] Log opened at 2022-11-10 10:17:53.361912
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:17:53.386023
+
+[19] Log opened at 2022-11-10 10:17:55.049279
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:17:55.073651
+
+[17] Log opened at 2022-11-10 10:18:27.207873
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 10:18:27.234783
+
+[23] Log opened at 2022-11-10 10:19:52.415691
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 10:19:52.585510
+
+[23] Log opened at 2022-11-10 10:19:53.534280
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/dbtest.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 10:19:53.553982
+
+[23] Log opened at 2022-11-10 10:19:58.472248
+[23] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[23] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[23] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/dbtest.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="23"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[23] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[23] Log closed at 2022-11-10 10:19:58.494509
+
+[19] Log opened at 2022-11-10 10:20:06.011540
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:20:06.039426
+
+[19] Log opened at 2022-11-10 10:20:10.507031
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:20:10.531953
+
+[19] Log opened at 2022-11-10 10:20:11.796155
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:20:11.814516
+
+[19] Log opened at 2022-11-10 10:20:14.210111
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:20:14.232906
+
+[19] Log opened at 2022-11-10 10:20:15.411727
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:20:15.430504
+
+[19] Log opened at 2022-11-10 10:20:18.289855
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:20:18.311747
+
+[19] Log opened at 2022-11-10 10:20:19.951528
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:20:19.970228
+
+[17] Log opened at 2022-11-10 10:20:31.725646
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 10:20:31.756731
+
+[17] Log opened at 2022-11-10 10:20:33.013001
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 10:20:33.033552
+
+[20] Log opened at 2022-11-10 10:20:38.558618
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:20:38.589476
+
+[20] Log opened at 2022-11-10 10:20:40.187118
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/regist.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:20:40.205440
+
+[19] Log opened at 2022-11-10 10:21:06.698925
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/registProcess.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:21:06.855196
+
+[19] Log opened at 2022-11-10 10:21:08.621951
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/dbtest.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:21:08.641167
+
+[17] Log opened at 2022-11-10 10:21:14.370276
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 10:21:14.389914
+
+[17] Log opened at 2022-11-10 10:21:16.119481
+[17] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[17] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[17] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="17"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[17] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[17] Log closed at 2022-11-10 10:21:16.149958
+
+[20] Log opened at 2022-11-10 10:22:39.889269
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:22:39.926138
+
+[20] Log opened at 2022-11-10 10:22:41.399359
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:22:41.424645
+
+[20] Log opened at 2022-11-10 10:22:42.954479
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:22:42.972395
+
+[20] Log opened at 2022-11-10 10:22:43.903322
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:22:43.927572
+
+[20] Log opened at 2022-11-10 10:22:48.442895
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:22:48.461282
+
+[20] Log opened at 2022-11-10 10:22:49.816575
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:22:49.837261
+
+[20] Log opened at 2022-11-10 10:22:50.785601
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:22:50.805149
+
+[20] Log opened at 2022-11-10 10:22:52.631142
+[20] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[20] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[20] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="20"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[20] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[20] Log closed at 2022-11-10 10:22:52.652675
+
+[19] Log opened at 2022-11-10 10:22:59.845898
+[19] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[19] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[19] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="19"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[19] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[19] Log closed at 2022-11-10 10:22:59.872989
+
+[22] Log opened at 2022-11-10 10:23:25.357189
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 10:23:25.420626
+
+[22] Log opened at 2022-11-10 10:23:26.850734
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 10:23:26.871870
+
+[22] Log opened at 2022-11-10 10:23:28.942261
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/searchresult.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 10:23:28.964767
+
+[22] Log opened at 2022-11-10 10:23:32.210668
+[22] [Step Debug] INFO: Connecting to configured address/port: host.docker.internal:8010.
+[22] [Step Debug] INFO: Connected to debugging client: host.docker.internal:8010 (through xdebug.client_host/xdebug.client_port). :-)
+[22] [Step Debug] -> <init xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" fileuri="file:///var/www/html/search.php" language="PHP" xdebug:language_version="8.1.12" protocol_version="1.0" appid="22"><engine version="3.1.5"><![CDATA[Xdebug]]></engine><author><![CDATA[Derick Rethans]]></author><url><![CDATA[https://xdebug.org]]></url><copyright><![CDATA[Copyright (c) 2002-2022 by Derick Rethans]]></copyright></init>
+
+[22] [Step Debug] -> <response xmlns="urn:debugger_protocol_v1" xmlns:xdebug="https://xdebug.org/dbgp/xdebug" status="stopping" reason="ok"></response>
+
+[22] Log closed at 2022-11-10 10:23:32.237503
+

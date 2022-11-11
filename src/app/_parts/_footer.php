@@ -1,3 +1,6 @@
-<script>app/script.js</script>
+<script>
+  app / script.js
+</script>
 </body>
+
 </html>

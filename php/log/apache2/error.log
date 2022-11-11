@@ -1140,3 +1140,171 @@ Stack trace:
 #0 /var/www/html/searchresult.php(52): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
 #1 {main}
   thrown in /var/www/html/searchresult.php on line 52
+[10-Nov-2022 16:07:01 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR) ? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+    ' at line 4 in /var/www/html/searchresult.php:45
+Stack trace:
+#0 /var/www/html/searchresult.php(45): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 45
+[10-Nov-2022 16:07:12 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR) ? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND
+    ' at line 4 in /var/www/html/searchresult.php:45
+Stack trace:
+#0 /var/www/html/searchresult.php(45): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 45
+[10-Nov-2022 16:07:41 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR) LIKE ? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND' at line 4 in /var/www/html/searchresult.php:45
+Stack trace:
+#0 /var/www/html/searchresult.php(45): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 45
+[10-Nov-2022 16:08:24 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR) LIKE ? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND' at line 4 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 16:08:47 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR) LIKE ? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? AND' at line 4 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 16:10:25 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR(1)) LIKE ? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? A' at line 4 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 16:16:19 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR(1) 住所, 電話番号, メールアドレス, CAST(モバイル端末ã' at line 1 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 16:16:56 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR(1)) 住所, 電話番号, メールアドレス, CAST(モバイル端末' at line 1 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 16:17:19 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR(1)), 住所, 電話番号, メールアドレス, CAST(モバイル端æ' at line 1 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 16:28:27 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR(1)) LIKE ? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? A' at line 4 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 16:28:29 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'VARCHAR(1)) LIKE ? AND
+        住所 LIKE ? AND
+        電話番号 LIKE ? A' at line 4 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 85
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 89
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 85
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 89
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 85
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 89
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 85
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 89
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 85
+[10-Nov-2022 16:36:45 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 89
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:37:49 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:43:26 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:44:17 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AS CHAR(1)), 住所, 電話番号, メールアドレス, CONVERT(モバイルç«' at line 1 in /var/www/html/searchresult.php:44
+Stack trace:
+#0 /var/www/html/searchresult.php(44): PDO->prepare('SELECT ID, \xE3\x81\x8A\xE5...')
+#1 {main}
+  thrown in /var/www/html/searchresult.php on line 44
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:20 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:39 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:45:50 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "性別コード" in /var/www/html/searchresult.php on line 86
+[10-Nov-2022 16:46:32 Asia/Tokyo] PHP Warning:  Undefined array key "モバイル端末コード" in /var/www/html/searchresult.php on line 90
+[10-Nov-2022 18:42:40 Asia/Tokyo] PHP Warning:  Undefined array key "パスワード" in /var/www/html/registProcess.php on line 83
+[10-Nov-2022 18:42:46 Asia/Tokyo] PHP Warning:  Undefined array key "パスワード" in /var/www/html/registProcess.php on line 83
+[10-Nov-2022 19:15:15 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 19:15:22 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 19:15:33 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 19:15:37 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 19:16:15 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 19:16:37 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 19:16:58 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[10-Nov-2022 19:18:28 Asia/Tokyo] PHP Fatal error:  Uncaught PDOException: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'ID' in 'field list' in /var/www/html/registProcess.php:110
+Stack trace:
+#0 /var/www/html/registProcess.php(110): PDO->prepare('INSERT INTO use...')
+#1 {main}
+  thrown in /var/www/html/registProcess.php on line 110
+[10-Nov-2022 19:21:17 Asia/Tokyo] PHP Warning:  Undefined variable $searchResults in /var/www/html/searchresult.php on line 82
+[10-Nov-2022 19:21:17 Asia/Tokyo] PHP Warning:  foreach() argument must be of type array|object, null given in /var/www/html/searchresult.php on line 82
+Cannot load Xdebug - it was already loaded
+[11-Nov-2022 08:49:02 Asia/Tokyo] PHP Deprecated:  PHP Startup: Use of mbstring.internal_encoding is deprecated in Unknown on line 0
+[Thu Nov 10 23:49:03.034193 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.12 configured -- resuming normal operations
+[Thu Nov 10 23:49:03.034476 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
