@@ -1,4 +1,4 @@
-DROP TABLE IF EXISTS sample_table;
+﻿DROP TABLE IF EXISTS sample_table;
  
 CREATE TABLE sample_table (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -28,7 +28,7 @@ INSERT INTO users_data (user_id, user_password, user_name, user_sex, user_addres
 
 
 
-DROP TABLE IF EXISTS dammies_data;
+DROP TABLE IF EXISTS dummies_data;
 CREATE TABLE dammies_data (
 	user_id VARCHAR(24) UNIQUE NOT NULL,
 	user_password VARCHAR(24) NOT NULL,
@@ -40,7 +40,7 @@ CREATE TABLE dammies_data (
 	user_mobile_device INT(1) NOT NULL
 	);
 
-INSERT INTO dammies_data (user_id, user_password, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device) VALUES
+INSERT INTO dummies_data (user_id, user_password, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device) VALUES
 
 ('tdnBcrkj','qQuxsj1','浅野たく',2,'神奈川県横浜市中区曙町1丁目2番地9号',9086113957,'taku_asano@example.com',3),
 ('ayiUpwcz','XszGrUN','山口真由美',1,'東京都葛飾区高砂3-2-20',5083476095,'mayumiyamaguchi@example.net',3),
