@@ -1,4 +1,9 @@
 <?php
+require('app/functions.php');
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+  validateToken();
+}
+
 try {
   //データベースへ接続
   $pdo = new PDO(
@@ -25,7 +30,6 @@ try {
 //$result = $stmt->fetch();
 // var_dump($result);
 
-require('app/functions.php');
 include('app/_parts/_header.php');
 ?>
 <?php
@@ -57,8 +61,7 @@ $registed_id = $stmt->fetch();
 
 //未入力項目チェック
 if (in_array("", $regist_info, true)) { ?>
-  <div class=input_invalid>
-    <ul>
+    <ul class="alert_message">
       <?php
       foreach ($regist_info as $key => $entered) { ?>
         <?php
@@ -86,21 +89,19 @@ if (in_array("", $regist_info, true)) { ?>
       <?php }
       } ?>
     </ul>
-  </div>
   <button type="button" onclick="history.back()" id="submit">戻る</button>
 <?php
   //重複チェック
   //bool型を返す関数に対して配列オフセットを渡すと警告文が出る
 } elseif (!empty($registed_id)) {
 ?>
-  <p style="text-align: center; margin-top: 80px; font-size: large;">そのIDは既に登録されているため使えません。</p>
+  <p class="alert_message">そのIDは既に登録されているため使えません。</p>
   </div>
   <button type="button" onclick="history.back()" id="submit">戻る</button>
 <?php
   //PW確認チェック 
 } elseif ($regist_info["user_password"] !== $user_pw_check) { ?>
-  <p style="text-align: center; margin-top: 80px; font-size: large;">確認パスワードが合致していません。</p>
-  </div>
+  <p class="alert_message"><>確認パスワードが合致していません。</p>
   <button type="button" onclick="history.back()" id="submit">戻る</button>
 <?php
   //チェックが問題なければ登録
@@ -126,8 +127,5 @@ if (in_array("", $regist_info, true)) { ?>
 <?php
 }
 ?>
-
-
-
 <?php
 include('app/_parts/_footer.php');

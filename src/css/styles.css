@@ -129,7 +129,7 @@ input[type=password] {
 }
 
 
-#submit {
+#submit{
   display: block;
   height: 32px;
   width: 120px;
@@ -141,13 +141,13 @@ input[type=password] {
 }
 
 #submit:hover {
-  background-color: #DDD;
+  background-color: #DDDDEE;
 }
 
 .input-invalid {
   display: flex;
   justify-content: center;
-  text-align: left;
+  text-align: center;
 }
 
 
@@ -155,4 +155,16 @@ button {
   display: block;
   margin: 8px auto;
   text-align: center;
+  background-color: #BBB;
+  border-radius: 8px;
+  border-width: 1px;
+}
+
+button:hover {
+  background-color: #DDDDEE;
+}
+.alert_message {
+  text-align: center;
+  margin-top: 80px;
+  font-size: large;
 }

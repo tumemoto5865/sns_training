@@ -1,5 +1,6 @@
 <?php
 
+require('app/functions.php');
 try {
     //データベースへ接続
     $pdo = new PDO(
@@ -21,7 +22,6 @@ try {
     exit;
 }
 
-require('app/functions.php');
 include('app/_parts/_header.php');
 ?>
 
@@ -96,7 +96,7 @@ $search_results = $stmt->fetchAll();
     <!-- 検索結果表示終了 -->
 
     <!-- よく見る検索結果件数に応じてページを切り替えになる仕組みを作る。 -->
-                
+
 
 
 

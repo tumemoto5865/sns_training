@@ -1308,3 +1308,29 @@ Cannot load Xdebug - it was already loaded
 [11-Nov-2022 08:49:02 Asia/Tokyo] PHP Deprecated:  PHP Startup: Use of mbstring.internal_encoding is deprecated in Unknown on line 0
 [Thu Nov 10 23:49:03.034193 2022] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.54 (Debian) PHP/8.1.12 configured -- resuming normal operations
 [Thu Nov 10 23:49:03.034476 2022] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Fri Nov 11 14:28:54.983150 2022] [php:error] [pid 17] [client 172.18.0.1:34132] script '/var/www/html/detest.php' not found or unable to stat
+[11-Nov-2022 23:35:24 Asia/Tokyo] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/html/dummies_data_process.php on line 55
+[11-Nov-2022 23:35:47 Asia/Tokyo] PHP Warning:  Undefined variable $SERVER in /var/www/html/dummies_data_process.php on line 3
+[11-Nov-2022 23:35:47 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/dummies_data_process.php on line 3
+[11-Nov-2022 23:38:03 Asia/Tokyo] PHP Warning:  Undefined variable $SERVER in /var/www/html/dummies_data_process.php on line 3
+[11-Nov-2022 23:38:03 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/dummies_data_process.php on line 3
+[11-Nov-2022 23:38:03 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[11-Nov-2022 23:38:59 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[11-Nov-2022 23:39:08 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[11-Nov-2022 23:45:16 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[11-Nov-2022 23:45:16 Asia/Tokyo] PHP Warning:  Undefined variable $ in /var/www/html/dummies_data_process.php on line 40
+[11-Nov-2022 23:45:20 Asia/Tokyo] PHP Deprecated:  htmlspecialchars(): Passing null to parameter #1 ($string) of type string is deprecated in /var/www/html/app/functions.php on line 6
+[11-Nov-2022 23:45:20 Asia/Tokyo] PHP Warning:  Undefined variable $ in /var/www/html/dummies_data_process.php on line 40
+[11-Nov-2022 23:54:37 Asia/Tokyo] PHP Warning:  Undefined variable $SERVER in /var/www/html/registProcess.php on line 3
+[11-Nov-2022 23:54:37 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/registProcess.php on line 3
+[11-Nov-2022 23:54:51 Asia/Tokyo] PHP Warning:  Undefined variable $SERVER in /var/www/html/registProcess.php on line 3
+[11-Nov-2022 23:54:51 Asia/Tokyo] PHP Warning:  Trying to access array offset on value of type null in /var/www/html/registProcess.php on line 3
+[12-Nov-2022 00:59:19 Asia/Tokyo] PHP Parse error:  syntax error, unexpected token "<", expecting end of file in /var/www/html/dummies_data_process.php on line 62
+[12-Nov-2022 01:28:34 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Undefined constant "dummies_install" in /var/www/html/dummies_data_process.php:41
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/dummies_data_process.php on line 41
+[12-Nov-2022 01:40:58 Asia/Tokyo] PHP Fatal error:  Uncaught Error: Undefined constant "dummies_install" in /var/www/html/dummies_data_process.php:41
+Stack trace:
+#0 {main}
+  thrown in /var/www/html/dummies_data_process.php on line 41

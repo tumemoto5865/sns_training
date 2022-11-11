@@ -9,7 +9,7 @@ INSERT INTO sample_table (name) VALUES ("昭和"),("平成"),("令和");
 
 DROP TABLE IF EXISTS users_data;
 CREATE TABLE users_data (
-	user_id VARCHAR(24) NOT NULL,
+	user_id VARCHAR(24) UNIQUE NOT NULL,
 	user_password VARCHAR(24) NOT NULL,
 	user_name VARCHAR(32) NOT NULL,
 	user_sex INT(1) NOT NULL,
