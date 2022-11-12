@@ -58,7 +58,7 @@ $stmt->bindValue(6, $search_info["user_mail_address"], PDO::PARAM_STR);
 $stmt->bindValue(7, $search_info["user_mobile_device"], PDO::PARAM_STR);
 $stmt->execute();
 $search_results = $stmt->fetchAll();
-// var_dump($searchResults);//テスト
+var_dump($search_results);//テスト
 
 
 ?>
@@ -89,15 +89,28 @@ $search_results = $stmt->fetchAll();
                 <td><?= $personal_data["user_mail_address"] ?></td>
                 <td><?= $personal_data["user_mobile_device"] ?></td>
             </tr><?php
+
                 }
                     ?>
         <!-- 増やすのはここまで -->
     </table>
     <!-- 検索結果表示終了 -->
-
     <!-- よく見る検索結果件数に応じてページを切り替えになる仕組みを作る。 -->
-
-
+    <?php 
+    //まずページ表示件数の変数。後で変更できるようにしたいが。
+    $display_items_count = 20;
+    //次に件数を調べる。$search_resultsの中を調べればいいはず
+    $search_items_count = count($search_results);
+    //トータルのページ数
+    $page_count = ceil($search_items_count / $max_display_number);
+    //表示しているページ。何もpostされてこなければ1ページ目とする
+    $now_display = filter_input(INPUT_POST, "page_number") === "" ? $now_display = 1 : "page_number";
+    //配列の何番目から表示する？
+    $start_number = ($now_display - 1) * $display_items_count;
+    //allayslice。便利な関数があったが忘れている。
+    array_slice($search_results, $start_number, $display_items_count);
+    //今日はここまで。
+    ?>
     <p><button type="button" onclick="history.back()" id="submit">戻る</button></p>
     </p>
     <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
