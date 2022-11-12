@@ -49,7 +49,7 @@ createToken();
         <label for="user_mobile_device">モバイル端末</label>
         <select name="user_mobile_device" id=user_mobile_device>
           <option value="1">iphone</option>
-          <option value=io"2">android</option>
+          <option value="2">android</option>
           <option value="3">その他</option>
         </select><br />
       </p>

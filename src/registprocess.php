@@ -119,7 +119,7 @@ if (in_array("", $regist_info, true)) { ?>
     $i++;
     // echo ($split_info . PHP_EOL);//テスト用
   }
-  $i = 1; //必要なさそう。あとでテストする
+  // $i = 1; //必要なさそう。あとでテストする
   $stmt->execute();
 ?>
   <p style="text-align: center; margin-top: 80px; font-size: x-large;">登録完了</p>
