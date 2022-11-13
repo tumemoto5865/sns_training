@@ -26,16 +26,15 @@ include('app/_parts/_header.php');
 ?>
 
 <?php
-validateToken();
 //POST情報取得
 $search_info = [
-    "user_id" => hsc("%" . filter_input(INPUT_POST, "user_id") . "%"),
-    "user_name" => hsc("%" . filter_input(INPUT_POST, "user_name") . "%"),
-    "user_sex" => hsc("%" . filter_input(INPUT_POST, "user_sex") . "%"),
-    "user_address" => hsc("%" . filter_input(INPUT_POST, "user_address") . "%"),
-    "user_tel" => hsc(trim("%" . filter_input(INPUT_POST, "user_tel")) . "%"),
-    "user_mail_address" => hsc(trim("%" . filter_input(INPUT_POST, "user_mail_address")) . "%"),
-    "user_mobile_device" => hsc("%" . filter_input(INPUT_POST, "user_mobile_device") . "%"),
+    "user_id" => hsc("%" . filter_input(INPUT_GET, "user_id") . "%"),
+    "user_name" => hsc("%" . filter_input(INPUT_GET, "user_name") . "%"),
+    "user_sex" => hsc("%" . filter_input(INPUT_GET, "user_sex") . "%"),
+    "user_address" => hsc("%" . filter_input(INPUT_GET, "user_address") . "%"),
+    "user_tel" => hsc(trim("%" . filter_input(INPUT_GET, "user_tel")) . "%"),
+    "user_mail_address" => hsc(trim("%" . filter_input(INPUT_GET, "user_mail_address")) . "%"),
+    "user_mobile_device" => hsc("%" . filter_input(INPUT_GET, "user_mobile_device") . "%"),
 ];
 
 // var_dump($search_info);//テスト
@@ -58,7 +57,7 @@ $stmt->bindValue(6, $search_info["user_mail_address"], PDO::PARAM_STR);
 $stmt->bindValue(7, $search_info["user_mobile_device"], PDO::PARAM_STR);
 $stmt->execute();
 $search_results = $stmt->fetchAll();
-var_dump($search_results);//テスト
+// var_dump($search_results);//テスト
 
 
 ?>
@@ -66,6 +65,25 @@ var_dump($search_results);//テスト
 <main>
     <h1>検索結果</h1>
 
+    <!-- よく見る検索結果件数に応じてページを切り替えになる仕組みを作る。 -->
+    <?php 
+    //まずページ表示件数の変数。後で変更できるようにしたいが。
+    $display_items_count = 20;
+    //次に件数を調べる。$search_resultsの中を調べればいいはず
+    $search_items_count = count($search_results);
+    //トータルのページ数
+    $max_page_count = ceil($search_items_count / $display_items_count);
+    //表示しているページ。何もgetされてこなければ1ページ目とする
+    $now_display = !isset($_GET['page_number']) ? 1 : (int)$_GET['page_number'] ;
+
+    // echo "now_displayのデータ型は".gettype($now_display) . "です". PHP_EOL;//テスト 
+    // echo "now_displayは". $now_display . "です";//テスト 
+
+    //配列の何番目から表示する？
+    $start_number = ($now_display - 1) * $display_items_count;
+    //allayslice。便利な関数があったが忘れている。配列の中で*番目から*個分切り出す
+    $display_search_results = array_slice($search_results, $start_number, $display_items_count, true);
+    ?>
     <!-- 検索結果結果表示開始 -->
     <table>
         <tr>
@@ -79,7 +97,7 @@ var_dump($search_results);//テスト
         </tr>
         <!-- これをforeachで増やす。 -->
         <?php
-        foreach ($search_results as $personal_data) {
+        foreach ($display_search_results as $personal_data) {
         ?><tr>
                 <td><?= $personal_data["user_id"] ?></td>
                 <td><?= $personal_data["user_name"] ?></td>
@@ -95,23 +113,25 @@ var_dump($search_results);//テスト
         <!-- 増やすのはここまで -->
     </table>
     <!-- 検索結果表示終了 -->
-    <!-- よく見る検索結果件数に応じてページを切り替えになる仕組みを作る。 -->
-    <?php 
-    //まずページ表示件数の変数。後で変更できるようにしたいが。
-    $display_items_count = 20;
-    //次に件数を調べる。$search_resultsの中を調べればいいはず
-    $search_items_count = count($search_results);
-    //トータルのページ数
-    $page_count = ceil($search_items_count / $max_display_number);
-    //表示しているページ。何もpostされてこなければ1ページ目とする
-    $now_display = filter_input(INPUT_POST, "page_number") === "" ? $now_display = 1 : "page_number";
-    //配列の何番目から表示する？
-    $start_number = ($now_display - 1) * $display_items_count;
-    //allayslice。便利な関数があったが忘れている。
-    array_slice($search_results, $start_number, $display_items_count);
-    //今日はここまで。
+    <!-- ページ切り替えリンク生成 -->
+    <p class="page_select">
+    <?php
+    for ($i = 1; $i < $display_items_count; $i++) {
+        if ($i === $now_display) {
+            echo $now_display . ' ';
+        }
+        else {
+            ?>
+            <!-- ポイントとしては、授受する値をGETにしておけばリンクとしてaタグに簡単に仕込めるっていうこと。INPUT系のはGETで授受すれば利用者がブックマークにして利用することもできる。検索関係はPOSTよりGETのが向いているようだ -->
+            <a href="searchresult.php?page_number=<?= $i ?>"><?= $i ?></a>
+            <?php 
+        }
+    }
     ?>
-    <p><button type="button" onclick="history.back()" id="submit">戻る</button></p>
+    </p>
+    <!-- ページ切り替えリンク生成〆 -->
+
+    <p><button type="button" onclick="location.href='search.php'" id="submit">検索画面へ戻る</button></p>
     </p>
     <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
 </main>
