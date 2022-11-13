@@ -27,27 +27,56 @@ include('app/_parts/_header.php');
 
 <?php
 //POST情報取得
-$search_info = [
-    "user_id" => hsc("%" . filter_input(INPUT_GET, "user_id") . "%"),
-    "user_name" => hsc("%" . filter_input(INPUT_GET, "user_name") . "%"),
-    "user_sex" => hsc("%" . filter_input(INPUT_GET, "user_sex") . "%"),
-    "user_address" => hsc("%" . filter_input(INPUT_GET, "user_address") . "%"),
-    "user_tel" => hsc(trim("%" . filter_input(INPUT_GET, "user_tel")) . "%"),
-    "user_mail_address" => hsc(trim("%" . filter_input(INPUT_GET, "user_mail_address")) . "%"),
-    "user_mobile_device" => hsc("%" . filter_input(INPUT_GET, "user_mobile_device") . "%"),
-];
+// $search_info = [
+//     "user_id" => hsc("%" . filter_input(INPUT_GET, "user_id") . "%"),
+//     "user_name" => hsc("%" . filter_input(INPUT_GET, "user_name") . "%"),
+//     "user_sex" => hsc("%" . filter_input(INPUT_GET, "user_sex") . "%"),
+//     "user_address" => hsc("%" . filter_input(INPUT_GET, "user_address") . "%"),
+//     "user_tel" => hsc(trim("%" . filter_input(INPUT_GET, "user_tel")) . "%"),
+//     "user_mail_address" => hsc(trim("%" . filter_input(INPUT_GET, "user_mail_address")) . "%"),
+//     "user_mobile_device" => hsc("%" . filter_input(INPUT_GET, "user_mobile_device") . "%"),
+// ];
 
-// var_dump($search_info);//テスト
+//関数で動的に配列生成しよう。※array_pushは連想配列のキー指定追加はできない。
+//融通を効かせられるよう受け取り方法変更。クエリ文も動的に生成(しようと思ったけどできなかった)。関数を作って使ってみる。難しい。
+$search_info = [];
+function search_info_add($recieved_name)
+{
+    //空欄だったらNULLを入れる
+    if (filter_input(INPUT_GET, $recieved_name) === "") {
+        global $search_info;
+        $search_info[$recieved_name] = NULL;
+    } else { //何か入ってたら$search_infoに追加していく。stringの場合
+        global $search_info;
+        if ($recieved_name != "user_sex" && $recieved_name !=  "user_mobile_device") {
+            $search_info[$recieved_name] = hsc("%" . filter_input(INPUT_GET, $recieved_name) . "%");
+        } else {
+            $search_info[$recieved_name] = (int)(filter_input(INPUT_GET, $recieved_name));
+        }
+    }
+};
+search_info_add("user_id");
+search_info_add("user_name");
+search_info_add("user_sex");
+search_info_add("user_address");
+search_info_add("user_tel");
+search_info_add("user_mail_address");
+search_info_add("user_mobile_device");
+var_dump($search_info);//テスト
+// var_dump(array_keys($search_info));//テスト
 
-//クエリに変数入れたいのでプリペアドステートメントを使う(メモ)
-$stmt = $pdo->prepare('SELECT user_id, user_name, CAST(user_sex AS CHAR(1)) AS user_sex, user_address, user_tel, user_mail_address, CAST(user_mobile_device AS CHAR(1)) AS user_mobile_device FROM users_data WHERE 
-        user_id LIKE ? AND
+//プレースホルダを使ってクエリを動的に生成できないかと長時間試したがどうやら無理らしい。考えて見れば当たり前な気もするが
+// クエリに変数入れたいのでプリペアドステートメントを使う
+
+$stmt = $pdo->prepare('SELECT user_id, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device FROM users_data WHERE 
+        (user_id LIKE ? AND
         user_name LIKE ? AND
         user_sex LIKE ? AND
         user_address LIKE ? AND
         user_tel LIKE ? AND
         user_mail_address LIKE ? AND
-        user_mobile_device LIKE ? ORDER BY user_name');
+        user_mobile_device LIKE ?)IS NOT FALSE ORDER BY user_name');
+
 $stmt->bindValue(1, $search_info["user_id"], PDO::PARAM_STR);
 $stmt->bindValue(2, $search_info["user_name"], PDO::PARAM_STR);
 $stmt->bindValue(3, $search_info["user_sex"], PDO::PARAM_STR);
@@ -60,13 +89,42 @@ $search_results = $stmt->fetchAll();
 // var_dump($search_results);//テスト
 
 
-?>
+//検索クエリ動的生成。入力されなかった項目はそもそもSELECTのカラム指定に入れないような文にした。これにより仮にカラムが増えてもこのスクリプトの変更部分が少なくなる。
+//プレースホルダに名前を付け、バインド内容を考えればできるはず...と思ったけどできませんでした。
+// $stmt = $pdo->prepare('SELECT * FROM users_data WHERE ORDER BY user_name');
+// echo 'プリペアドステートメント準備';
 
+// $search_values = '';
+
+// if ($search_info === []) {
+//     $search_values = '';
+//     echo $selected_coulmns;
+// } else {
+
+//     foreach ($search_info as $key => $search_value) {
+//         if ($key === array_key_last($search_info)) {
+//             $search_values = $search_values . $key . " LIKE " . $search_value;
+//         } elseif ($key === array_key_first($search_info)) {
+//             $search_values = "WHERE " . $search_values . $key . " LIKE " . $search_value . " AND ";
+//         } else {
+//             $search_values = " " . $search_values . $key . " LIKE " . $search_value . " AND ";
+//         }
+//     }
+// }
+// // $search_values = '';//テスト用
+// // echo $search_values;//テスト用
+// // echo gettype($search_values);//テスト用
+// $stmt->bindValue(':search_values', $search_values, PDO::PARAM_STR);
+// $stmt->execute();
+// $search_results = $stmt->fetchAll();
+// 
+
+?>
 <main>
     <h1>検索結果</h1>
 
     <!-- よく見る検索結果件数に応じてページを切り替えになる仕組みを作る。 -->
-    <?php 
+    <?php
     //まずページ表示件数の変数。後で変更できるようにしたいが。
     $display_items_count = 20;
     //次に件数を調べる。$search_resultsの中を調べればいいはず
@@ -74,7 +132,7 @@ $search_results = $stmt->fetchAll();
     //トータルのページ数
     $max_page_count = ceil($search_items_count / $display_items_count);
     //表示しているページ。何もgetされてこなければ1ページ目とする
-    $now_display = !isset($_GET['page_number']) ? 1 : (int)$_GET['page_number'] ;
+    $now_display = !isset($_GET['page_number']) ? 1 : (int)$_GET['page_number'];
 
     // echo "now_displayのデータ型は".gettype($now_display) . "です". PHP_EOL;//テスト 
     // echo "now_displayは". $now_display . "です";//テスト 
@@ -115,19 +173,18 @@ $search_results = $stmt->fetchAll();
     <!-- 検索結果表示終了 -->
     <!-- ページ切り替えリンク生成 -->
     <p class="page_select">
-    <?php
-    for ($i = 1; $i < $display_items_count; $i++) {
-        if ($i === $now_display) {
-            echo $now_display . ' ';
+        <?php
+        for ($i = 1; $i < $display_items_count; $i++) {
+            if ($i === $now_display) {
+                echo $now_display . ' ';
+            } else {
+        ?>
+                <!-- ポイントとしては、授受する値をGETにしておけばリンクとしてaタグに簡単に仕込めるっていうこと。INPUT系のはGETで授受すれば利用者がブックマークにして利用することもできる。検索関係はPOSTよりGETのが向いているようだ -->
+                <a href="searchresult.php?page_number=<?= $i ?>"><?= $i ?></a>
+        <?php
+            }
         }
-        else {
-            ?>
-            <!-- ポイントとしては、授受する値をGETにしておけばリンクとしてaタグに簡単に仕込めるっていうこと。INPUT系のはGETで授受すれば利用者がブックマークにして利用することもできる。検索関係はPOSTよりGETのが向いているようだ -->
-            <a href="searchresult.php?page_number=<?= $i ?>"><?= $i ?></a>
-            <?php 
-        }
-    }
-    ?>
+        ?>
     </p>
     <!-- ページ切り替えリンク生成〆 -->
 
