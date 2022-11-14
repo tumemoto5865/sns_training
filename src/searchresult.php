@@ -43,7 +43,7 @@ include('app/_parts/_header.php');
 
 function search_info_add($recieved_name)
 {
-// $search_info = [];
+    // $search_info = [];
     //空欄だったらNULLを入れる
     if (filter_input(INPUT_GET, $recieved_name) === "") {
         global $search_info;
@@ -58,13 +58,13 @@ function search_info_add($recieved_name)
     }
 };
 
-    search_info_add("user_id");
-    search_info_add("user_name");
-    search_info_add("user_sex");
-    search_info_add("user_address");
-    search_info_add("user_tel");
-    search_info_add("user_mail_address");
-    search_info_add("user_mobile_device");
+search_info_add("user_id");
+search_info_add("user_name");
+search_info_add("user_sex");
+search_info_add("user_address");
+search_info_add("user_tel");
+search_info_add("user_mail_address");
+search_info_add("user_mobile_device");
 
 // var_dump($search_info);//テスト
 // var_dump(array_keys($search_info));//テスト

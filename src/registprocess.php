@@ -61,34 +61,34 @@ $registed_id = $stmt->fetch();
 
 //未入力項目チェック
 if (in_array("", $regist_info, true)) { ?>
-    <ul class="alert_message">
+  <ul class="alert_message">
+    <?php
+    foreach ($regist_info as $key => $entered) { ?>
       <?php
-      foreach ($regist_info as $key => $entered) { ?>
-        <?php
-        if ($entered === "") {
-          //キー名を表示のため日本語にする
-          $japanse_key = "";
-          if ($key === "user_id") {
-            $japanse_key = "ID";
-          } elseif ($key === "user_password") {
-            $japanse_key = "パスワード";
-          } elseif ($key === "user_name") {
-            $japanse_key = "お名前";
-          } elseif ($key === "user_sex") {
-            $japanse_key = "性別";
-          } elseif ($key === "user_address") {
-            $japanse_key = "住所";
-          } elseif ($key === "user_mail_address") {
-            $japanse_key = "メールアドレス";
-          } elseif ($key === "user_mobile_device") {
-            $japanse_key = "モバイル端末";
-          }
-        ?>
-          <li><?= $japanse_key ?>が未入力です。
-          </li>
-      <?php }
-      } ?>
-    </ul>
+      if ($entered === "") {
+        //キー名を表示のため日本語にする
+        $japanse_key = "";
+        if ($key === "user_id") {
+          $japanse_key = "ID";
+        } elseif ($key === "user_password") {
+          $japanse_key = "パスワード";
+        } elseif ($key === "user_name") {
+          $japanse_key = "お名前";
+        } elseif ($key === "user_sex") {
+          $japanse_key = "性別";
+        } elseif ($key === "user_address") {
+          $japanse_key = "住所";
+        } elseif ($key === "user_mail_address") {
+          $japanse_key = "メールアドレス";
+        } elseif ($key === "user_mobile_device") {
+          $japanse_key = "モバイル端末";
+        }
+      ?>
+        <li><?= $japanse_key ?>が未入力です。
+        </li>
+    <?php }
+    } ?>
+  </ul>
   <button type="button" onclick="history.back()" id="submit">戻る</button>
 <?php
   //重複チェック
@@ -101,7 +101,9 @@ if (in_array("", $regist_info, true)) { ?>
 <?php
   //PW確認チェック 
 } elseif ($regist_info["user_password"] !== $user_pw_check) { ?>
-  <p class="alert_message"><>確認パスワードが合致していません。</p>
+  <p class="alert_message">
+    <>確認パスワードが合致していません。
+  </p>
   <button type="button" onclick="history.back()" id="submit">戻る</button>
 <?php
   //チェックが問題なければ登録
