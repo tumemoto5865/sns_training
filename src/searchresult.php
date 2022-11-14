@@ -26,47 +26,43 @@ include('app/_parts/_header.php');
 ?>
 
 <?php
-//GET情報取得
+//POST情報取得
 // $search_info = [
-//     "user_id" => !empty(filter_input(INPUT_GET, "user_id")) ? hsc("%" . filter_input(INPUT_GET, "user_id") . "%") : NULL,
-//     "user_name" => !empty(filter_input(INPUT_GET, "user_name")) ? hsc("%" . filter_input(INPUT_GET, "user_name") . "%") : NULL,
-//     "user_sex" => !empty(filter_input(INPUT_GET, "user_sex")) ? hsc("%" . filter_input(INPUT_GET, "user_sex") . "%") : NULL,
-//     "user_address" => !empty(filter_input(INPUT_GET, "user_address")) ? hsc("%" . filter_input(INPUT_GET, "user_address") . "%") : NULL,
-//     "user_tel" => !empty(filter_input(INPUT_GET, "user_tel")) ? hsc(trim("%" . filter_input(INPUT_GET, "user_tel")) . "%") : NULL,
-//     "user_mail_address" => !empty(filter_input(INPUT_GET, "user_mail_address")) ? hsc(trim("%" . filter_input(INPUT_GET, "user_mail_address")) . "%") : NULL,
-//     "user_mobile_device" => !empty(filter_input(INPUT_GET, "user_mobile_device")) ? hsc("%" . filter_input(INPUT_GET, "user_mobile_device") . "%") : NULL
+//     "user_id" => hsc("%" . filter_input(INPUT_GET, "user_id") . "%"),
+//     "user_name" => hsc("%" . filter_input(INPUT_GET, "user_name") . "%"),
+//     "user_sex" => hsc("%" . filter_input(INPUT_GET, "user_sex") . "%"),
+//     "user_address" => hsc("%" . filter_input(INPUT_GET, "user_address") . "%"),
+//     "user_tel" => hsc(trim("%" . filter_input(INPUT_GET, "user_tel")) . "%"),
+//     "user_mail_address" => hsc(trim("%" . filter_input(INPUT_GET, "user_mail_address")) . "%"),
+//     "user_mobile_device" => hsc("%" . filter_input(INPUT_GET, "user_mobile_device") . "%"),
 // ];
 
 //関数で動的に配列生成しよう。※array_pushは連想配列のキー指定追加はできない。
-//融通を効かせられるよう受け取り方法変更…したかったけど逆に長くなった。しかもどうも挙動が上と違う気がする...関数の練習にはなったけれど...
-//クエリ文も動的に生成(しようと思ったけどできなかった、考えてみればそれができたらプリペアドステートメントの意味がないかも)。関数を作って使ってみる。難しい。
-
+//融通を効かせられるよう受け取り方法変更。クエリ文も動的に生成(しようと思ったけどできなかった)。関数を作って使ってみる。難しい。
+$search_info = [];
 function search_info_add($recieved_name)
 {
-// $search_info = [];
     //空欄だったらNULLを入れる
     if (filter_input(INPUT_GET, $recieved_name) === "") {
         global $search_info;
         $search_info[$recieved_name] = NULL;
-    } else { //何か入ってたら$search_infoに追加していく。
+    } else { //何か入ってたら$search_infoに追加していく。stringの場合
         global $search_info;
         if ($recieved_name != "user_sex" && $recieved_name !=  "user_mobile_device") {
             $search_info[$recieved_name] = hsc("%" . filter_input(INPUT_GET, $recieved_name) . "%");
-        } elseif ($recieved_name === "user_sex" || $recieved_name ===  "user_mobile_device") {
+        } else {
             $search_info[$recieved_name] = (int)(filter_input(INPUT_GET, $recieved_name));
         }
     }
 };
-
-    search_info_add("user_id");
-    search_info_add("user_name");
-    search_info_add("user_sex");
-    search_info_add("user_address");
-    search_info_add("user_tel");
-    search_info_add("user_mail_address");
-    search_info_add("user_mobile_device");
-
-// var_dump($search_info);//テスト
+search_info_add("user_id");
+search_info_add("user_name");
+search_info_add("user_sex");
+search_info_add("user_address");
+search_info_add("user_tel");
+search_info_add("user_mail_address");
+search_info_add("user_mobile_device");
+var_dump($search_info);//テスト
 // var_dump(array_keys($search_info));//テスト
 
 //プレースホルダを使ってクエリを動的に生成できないかと長時間試したがどうやら無理らしい。考えて見れば当たり前な気もするが
@@ -135,21 +131,17 @@ $search_results = $stmt->fetchAll();
     $search_items_count = count($search_results);
     //トータルのページ数
     $max_page_count = ceil($search_items_count / $display_items_count);
-    // echo $max_page_count;
     //表示しているページ。何もgetされてこなければ1ページ目とする
     $now_display = !isset($_GET['page_number']) ? 1 : (int)$_GET['page_number'];
+
     // echo "now_displayのデータ型は".gettype($now_display) . "です". PHP_EOL;//テスト 
     // echo "now_displayは". $now_display . "です";//テスト 
 
     //配列の何番目から表示する？
     $start_number = ($now_display - 1) * $display_items_count;
-    // echo $start_number;//テスト
-    // echo $display_items_count;//テスト
     //allayslice。便利な関数があったが忘れている。配列の中で*番目から*個分切り出す
     $display_search_results = array_slice($search_results, $start_number, $display_items_count, true);
-    // var_dump($search_results)//テスト
     ?>
-
     <!-- 検索結果結果表示開始 -->
     <table>
         <tr>
@@ -182,13 +174,13 @@ $search_results = $stmt->fetchAll();
     <!-- ページ切り替えリンク生成 -->
     <p class="page_select">
         <?php
-        for ($i = 1; $i <= $max_page_count; $i++) {
+        for ($i = 1; $i < $display_items_count; $i++) {
             if ($i === $now_display) {
                 echo $now_display . ' ';
             } else {
         ?>
                 <!-- ポイントとしては、授受する値をGETにしておけばリンクとしてaタグに簡単に仕込めるっていうこと。INPUT系のはGETで授受すれば利用者がブックマークにして利用することもできる。検索関係はPOSTよりGETのが向いているようだ -->
-                <a href="<?= $_SERVER['REQUEST_URI'] ?>&page_number=<?= $i ?>"><?= $i ?></a>
+                <a href="searchresult.php?page_number=<?= $i ?>"><?= $i ?></a>
         <?php
             }
         }
