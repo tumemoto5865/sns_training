@@ -182,7 +182,7 @@ $search_results = $stmt->fetchAll();
     <!-- ページ切り替えリンク生成 -->
     <p class="page_select">
         <?php
-        for ($i = 1; $i < $max_page_count; $i++) {
+        for ($i = 1; $i <= $max_page_count; $i++) {
             if ($i === $now_display) {
                 echo $now_display . ' ';
             } else {
