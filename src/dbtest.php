@@ -14,9 +14,9 @@ createToken();
         <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
 
         <button type="submit" name="dummies_install" value="1">ダミーデータ500件挿入</button>
-        
+
         <button type="submit" name="dummies_install" value="0">挿入したダミーデータを削除</button>
-        
+
     </form>
     </p>
 </main>

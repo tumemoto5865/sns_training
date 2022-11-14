@@ -2,14 +2,13 @@
 require('app/functions.php');
 include('app/_parts/_header.php');
 
-createToken();
 ?>
 <main>
   <h1>検索フォーム</h1>
   <div class="main">
 
 
-    <form action="searchresult.php" method="post">
+    <form action="searchresult.php" method="get">
       <span class="input-form">
         <p>
           <label for="user_id">ID</label>
@@ -49,7 +48,6 @@ createToken();
         </p>
       </span>
       <p>
-        <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
         <input type="submit" value="検索" id="submit">
   </div>
   </p>
