@@ -7,7 +7,6 @@ createToken();
     <h1>データベース練習</h1>
     <p><a href="regist.php">登録</a></p>
     <p><a href="search.php">検索</a></p>
-
     <p>
     <form action="dummies_data_process.php" method="post">
 
