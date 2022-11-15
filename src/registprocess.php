@@ -8,7 +8,6 @@ try {
   //データベースへ接続
   $pdo = new PDO(
     'mysql:host=mysql;dbname=test_db;charset=utf8mb4',
-    //↑これ改行入れるとだめくさい
     //ユーザー名
     'user_data_root',
     //パス
@@ -61,30 +60,23 @@ $registed_id = $stmt->fetch();
 
 //未入力項目チェック
 if (in_array("", $regist_info, true)) { ?>
+      //キー名を表示のため日本語にする
+    $japanse_key = [
+      "user_id" => "ID",
+      "user_password" => "パスワード",
+      "user_name" => "お名前",
+      "user_sex" => "性別",
+      "user_address" => "住所",
+      "user_tel" => "電話番号",
+      "user_mail_address" => "メールアドレス",
+      "user_mobile_device" => "モバイル端末"
+    ];
   <ul class="alert_message">
     <?php
-    foreach ($regist_info as $key => $entered) { ?>
-      <?php
-      if ($entered === "") {
-        //キー名を表示のため日本語にする
-        $japanse_key = "";
-        if ($key === "user_id") {
-          $japanse_key = "ID";
-        } elseif ($key === "user_password") {
-          $japanse_key = "パスワード";
-        } elseif ($key === "user_name") {
-          $japanse_key = "お名前";
-        } elseif ($key === "user_sex") {
-          $japanse_key = "性別";
-        } elseif ($key === "user_address") {
-          $japanse_key = "住所";
-        } elseif ($key === "user_mail_address") {
-          $japanse_key = "メールアドレス";
-        } elseif ($key === "user_mobile_device") {
-          $japanse_key = "モバイル端末";
-        }
-      ?>
-        <li><?= $japanse_key ?>が未入力です。
+    foreach ($regist_info as $key => $entered) {
+      if ($entered === "" or $entered === NULL) {
+    ?>
+        <li><?= $japanse_key[$key] ?>が未入力です。
         </li>
     <?php }
     } ?>
@@ -108,7 +100,6 @@ if (in_array("", $regist_info, true)) { ?>
 <?php
   //チェックが問題なければ登録
 } else {
-  //トランザクションは一気にレコードを複数挿入するなどクエリが複数ある時しか無意味なので削除。
   $stmt = $pdo->prepare('INSERT INTO users_data (user_id, user_password, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
   $i = 1;
   foreach ($regist_info as $split_info) {
