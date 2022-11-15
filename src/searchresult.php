@@ -104,18 +104,11 @@ $search_results = $stmt->fetchAll();
     $display_search_results = array_slice($search_results, $start_number, $display_items_count, true);
     // var_dump($search_results);//テスト
     
-    //ソート
-    $sort_pattern = "";
-    $sort_condition = array_column($search_results, $sort_pattern);
-    
-
     ?>
     <!-- 検索結果結果表示開始 -->
     <table>
         <tr>
-            <th>
-            <a href="searchresult.php?<?= $search_querys ?>&sort=">ID</a>    
-            </th>
+            <th>ID</th>
             <th>お名前</th>
             <th>性別コード</th>
             <th>住所</th>
