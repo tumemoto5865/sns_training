@@ -172,3 +172,8 @@ button:hover {
 .page_select {
   text-align: center;
 }
+
+.display_items_count {
+  display:flex;
+  justify-content: center;
+}

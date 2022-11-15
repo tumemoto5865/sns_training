@@ -1,19 +1,4 @@
 <?php
-
-$search_query = 
-"?user_id=" . filter_input(INPUT_GET, "user_id") . 
-"?user_name=" . filter_input(INPUT_GET, "user_name") . 
-"&user_sex=" . filter_input(INPUT_GET, "user_sex") . 
-"&user_address=" . filter_input(INPUT_GET, "user_address") . 
-"&user_=" . filter_input(INPUT_GET, "user_id") . 
-"&user_sex=" . filter_input(INPUT_GET, "user_id") . 
-"&user_sex=" . filter_input(INPUT_GET, "user_id") . 
-"&user_sex=" . filter_input(INPUT_GET, "user_id") . 
-
-;
-$setcookie('search_query', $search_query);
-
-http://localhost:8010/searchresult.php?user_id=&user_name=&user_sex=&user_address=&user_tel=&user_mail_address=&user_mobile_device=
 require('app/functions.php');
 try {
     //データベースへ接続
@@ -33,6 +18,18 @@ try {
 } catch (PDOException $e) {
     echo $e->getMessage();
     exit;
+}
+
+//cookieにURLクエリを保存しておく
+if (strpos($_SERVER['HTTP_REFERER'], 'search.php')){
+    setcookie("search_querys", $_SERVER['QUERY_STRING']);
+}
+// ついでにsetcookie直後のページネイションリンク作成の際におかしくならないように
+    $search_querys = $_COOKIE['search_querys'] ?? $_SERVER['QUERY_STRING'];
+
+//1ページあたりの表示件数のcookie
+if (isset($_GET['display_items_count'])) {
+    setcookie("display_items_count", $_GET['display_items_count']);
 }
 
 include('app/_parts/_header.php');
@@ -78,15 +75,22 @@ $search_results = $stmt->fetchAll();
 ?>
 <main>
     <h1>検索結果</h1>
-
+    <form class="display_items_count">
+        <select onChange="location.href=value";>
+          <option selected>表示件数</option>
+          <option value="searchresult.php?<?= $search_querys ?>&display_items_count=20">20件ごと</option>
+          <option value="searchresult.php?<?= $search_querys ?>&display_items_count=30">30件ごと</option>
+          <option value="searchresult.php?<?= $search_querys ?>&display_items_count=50">50件ごと</option>
+          <option value="searchresult.php?<?= $search_querys ?>&display_items_count=100">100件ごと</option>
+        </select>
+    </form>
     <?php
-    //まずページ表示件数の変数。後で変更できるようにしたいが。
-    $display_items_count = 20;
-    //次に件数を調べる。$search_resultsの中を調べればいいはず
+    //まずページ表示件数の変数。
+    $display_items_count = $_GET['display_items_count'] ?? $_COOKIE ["display_items_count"] ?? 20;
+    //次に全体件数を調べる。$search_resultsの中を調べればいいはず
     $search_items_count = count($search_results);
     //トータルのページ数
     $max_page_count = ceil($search_items_count / $display_items_count);
-    // echo $max_page_count;
     //表示しているページ。何もgetされてこなければ1ページ目とする
     $now_display = !isset($_GET['page_number']) ? 1 : (int)$_GET['page_number'];
     // echo "now_displayのデータ型は".gettype($now_display) . "です". PHP_EOL;//テスト 
@@ -98,19 +102,27 @@ $search_results = $stmt->fetchAll();
     // echo $display_items_count;//テスト
     //allayslice。配列の中で*番目から*個分切り出す
     $display_search_results = array_slice($search_results, $start_number, $display_items_count, true);
-    // var_dump($search_results)//テスト
-    ?>
+    // var_dump($search_results);//テスト
+    
+    //ソート
+    $sort_pattern = "";
+    $sort_condition = array_column($search_results, $sort_pattern);
+    
 
+    ?>
     <!-- 検索結果結果表示開始 -->
     <table>
         <tr>
-            <th>ID</th>
+            <th>
+            <a href="searchresult.php?<?= $search_querys ?>&sort=">ID</a>    
+            </th>
             <th>お名前</th>
             <th>性別コード</th>
             <th>住所</th>
             <th>電話番号</th>
             <th>メールアドレス</th>
             <th>モバイル端末コード</th>
+            <th>編集ボタン作成予定</th>
         </tr>
         <!-- これをforeachで増やす。 -->
         <?php
@@ -123,7 +135,8 @@ $search_results = $stmt->fetchAll();
                 <td><?= $personal_data["user_tel"] ?></td>
                 <td><?= $personal_data["user_mail_address"] ?></td>
                 <td><?= $personal_data["user_mobile_device"] ?></td>
-            </tr><?php
+                <td>編集ボタン作成予定</td>
+        </tr><?php
 
                 }
                     ?>
@@ -138,7 +151,7 @@ $search_results = $stmt->fetchAll();
                 echo $now_display . ' ';
             } else {
         ?>
-                <a href="<?= $_SERVER['REQUEST_URI'] ?>&page_number=<?= $i ?>"><?= $i ?></a>
+                <a href="searchresult.php?<?= $search_querys ?>&page_number=<?= $i ?>"><?= $i ?></a>
         <?php
             }
         }

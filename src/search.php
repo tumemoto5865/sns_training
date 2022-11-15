@@ -49,10 +49,9 @@ include('app/_parts/_header.php');
       </span>
       <p>
         <input type="submit" value="検索" id="submit">
-  </div>
-  </p>
+      </div>
+    </p>
   </form>
-
   <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
 </main>
 <?php
