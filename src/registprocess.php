@@ -9,9 +9,9 @@ try {
   $pdo = new PDO(
     'mysql:host=mysql;dbname=test_db;charset=utf8mb4',
     //ユーザー名
-    'user_data_root',
+    'test_db_docker',
     //パス
-    'rootpass',
+    'test_db_docker_pass',
     //PDOのオプションを指定
     [
       PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -74,7 +74,7 @@ if (in_array("", $regist_info, true)) { ?>
   <ul class="alert_message">
     <?php
     foreach ($regist_info as $key => $entered) {
-      if ($entered === "" or $entered === NULL) {
+      if ($entered === "" or $entered === null) {
     ?>
         <li><?= $japanse_key[$key] ?>が未入力です。
         </li>
@@ -91,7 +91,7 @@ if (in_array("", $regist_info, true)) { ?>
   </div>
   <button type="button" onclick="history.back()" id="submit">戻る</button>
 <?php
-  //PW確認チェック 
+  //PW確認チェック
 } elseif ($regist_info["user_password"] !== $user_pw_check) { ?>
   <p class="alert_message">
     <>確認パスワードが合致していません。

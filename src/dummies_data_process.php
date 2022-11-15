@@ -12,9 +12,9 @@ try {
     'mysql:host=mysql;dbname=test_db;charset=utf8mb4',
     //↑これ改行入れるとだめくさい
     //ユーザー名
-    'user_data_root',
+    'test_db_docker',
     //パス
-    'rootpass',
+    'test_db_docker_pass',
     //PDOのオプションを指定
     [
       PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -56,8 +56,8 @@ WHERE NOT EXISTS (
   $pdo->query(
     'DELETE FROM users_data AS t_a
     WHERE
-        user_id IN 
-      (SELECT user_id 
+        user_id IN
+      (SELECT user_id
           FROM dummies_data AS t_b
    );'
   )
