@@ -20,12 +20,39 @@ try {
     exit;
 }
 
-//cookieにURLクエリを保存しておく
+//cookieに検索のURLクエリを保存しておく。
 if (strpos($_SERVER['HTTP_REFERER'], 'search.php')) {
-    setcookie("search_querys", $_SERVER['QUERY_STRING']);
+    setcookie('search_querys', $_SERVER['QUERY_STRING']);
+    $search_querys = $_SERVER['QUERY_STRING'];
+} else {
+    $search_querys = $_COOKIE['search_querys'];
 }
-// ついでにsetcookie直後のページネイションリンク作成の際におかしくならないように
-$search_querys = $_SERVER['QUERY_STRING'] ?? $_COOKIE['search_querys'];
+
+//ソート情報がcookieに保存されていればそれを入れた配列を、cookieが存在しなければ空の配列を作成
+$sort_info = [];
+if (!empty($_COOKIE['sort_info'])) {
+    parse_str($_COOKIE['sort_info'], $sort_info);
+}
+//get情報が渡ってきたら追加していく。cookieも更新。
+if (!empty($_GET["sort_column"])) {
+    if (array_key_exists($_GET["sort_column"], $sort_info)) {
+        if ($sort_info[$_GET["sort_column"]] === 'ASC') {
+            unset($sort_info[$_GET["sort_column"]]);
+            $addvalue[$_GET["sort_column"]] = 'DESC';
+            $sort_info = array_merge($addvalue, $sort_info);
+        } else if ($sort_info[$_GET["sort_column"]] === 'DESC') {
+            unset($sort_info[$_GET["sort_column"]]);
+            $addvalue[$_GET["sort_column"]] = 'ASC';
+            $sort_info = array_merge($addvalue, $sort_info);
+        }
+    } else {
+        $addvalue[$_GET["sort_column"]] = 'ASC';
+        $sort_info = array_merge($addvalue, $sort_info);
+    }
+    //文字列に変換してcookieに保存する。
+    setcookie('sort_info', http_build_query($sort_info));
+}
+// var_dump($sort_info);//テスト
 
 //1ページあたりの表示件数のcookie
 if (isset($_GET['display_items_count'])) {
@@ -33,7 +60,6 @@ if (isset($_GET['display_items_count'])) {
 }
 include('app/_parts/_header.php');
 ?>
-
 <?php
 //GET情報取得
 $search_info = [];
@@ -76,7 +102,25 @@ $WHERE_condition = function ($search_info) {
 };
 // echo $WHERE_condition($search_info);//テスト
 
-$stmt = $pdo->prepare('SELECT user_id, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device FROM users_data' . $WHERE_condition($search_info) . ' ORDER BY user_name');
+//ORDER BY文生成
+$OEDER_BY_condition = function ($sort_info) {
+    $OEDER_BY_condition = "";
+    $count = 1;
+    foreach ($sort_info as $key => $order_condition) {
+        if (!empty($key)) {
+            if ($count === 1) {
+                $OEDER_BY_condition = " ORDER BY `" . $key . "` " . $order_condition;
+            } else {
+                $OEDER_BY_condition .= ", `" . $key . "` " . $order_condition;
+            }
+            $count++;
+        }
+    }
+    return $OEDER_BY_condition;
+};
+// echo $OEDER_BY_condition($sort_info);//テスト
+
+$stmt = $pdo->prepare('SELECT user_id, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device FROM users_data' . $WHERE_condition($search_info) . $OEDER_BY_condition($sort_info));
 
 foreach ($search_info as $key => $value) {
     if (gettype($value) === "string") {
@@ -86,23 +130,25 @@ foreach ($search_info as $key => $value) {
     }
 }
 
+//ここでソートのバインドを行う
+
 $stmt->execute();
 $search_results = $stmt->fetchAll();
 // var_dump($search_results);//テスト
 
 ?>
 <main>
-  <h1>検索結果</h1>
-  <form class="display_items_count">
-    <select onChange="location.href=value" ;>
-      <option selected>表示件数</option>
-      <option value="searchresult.php?<?= $search_querys ?>&display_items_count=20">20件ごと</option>
-      <option value="searchresult.php?<?= $search_querys ?>&display_items_count=30">30件ごと</option>
-      <option value="searchresult.php?<?= $search_querys ?>&display_items_count=50">50件ごと</option>
-      <option value="searchresult.php?<?= $search_querys ?>&display_items_count=100">100件ごと</option>
-    </select>
-  </form>
-  <?php
+    <h1>検索結果</h1>
+    <form class="display_items_count">
+        <select onChange="location.href=value" ;>
+            <option selected>表示件数</option>
+            <option value="searchresult.php?<?= $search_querys ?>&display_items_count=20">20件ごと</option>
+            <option value="searchresult.php?<?= $search_querys ?>&display_items_count=30">30件ごと</option>
+            <option value="searchresult.php?<?= $search_querys ?>&display_items_count=50">50件ごと</option>
+            <option value="searchresult.php?<?= $search_querys ?>&display_items_count=100">100件ごと</option>
+        </select>
+    </form>
+    <?php
     //まずページ表示件数の変数。
     $display_items_count = $_GET['display_items_count'] ?? $_COOKIE["display_items_count"] ?? 20;
     //次に全体件数を調べる。$search_resultsの中を調べればいいはず
@@ -122,56 +168,56 @@ $search_results = $stmt->fetchAll();
     // var_dump($search_results);//テスト
 
     ?>
-  <!-- 検索結果結果表示開始 -->
-  <table>
-    <tr>
-      <th>ID</th>
-      <th>お名前</th>
-      <th>性別コード</th>
-      <th>住所</th>
-      <th>電話番号</th>
-      <th>メールアドレス</th>
-      <th>モバイル端末コード</th>
-      <th>編集ボタン作成予定</th>
-    </tr>
-    <!-- これをforeachで増やす。 -->
-    <?php
+    <!-- 検索結果結果表示開始 -->
+    <table>
+        <tr>
+            <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_id">ID</a></th>
+            <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_name">お名前</a></th>
+            <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_sex">性別コード</a></th>
+            <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_address">住所</a></th>
+            <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_tel">電話番号</a></th>
+            <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_mail_address">メールアドレス</a></th>
+            <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_mobile_device">モバイル端末コード</a></th>
+            <th>編集ボタン作成予定</th>
+        </tr>
+        <!-- これをforeachで増やす。 -->
+        <?php
         foreach ($display_search_results as $personal_data) {
         ?><tr>
-      <td><?= $personal_data["user_id"] ?></td>
-      <td><?= $personal_data["user_name"] ?></td>
-      <td><?= $personal_data["user_sex"] ?></td>
-      <td><?= $personal_data["user_address"] ?></td>
-      <td><?= $personal_data["user_tel"] ?></td>
-      <td><?= $personal_data["user_mail_address"] ?></td>
-      <td><?= $personal_data["user_mobile_device"] ?></td>
-      <td>編集ボタン作成予定</td>
-    </tr><?php
-    }
-        ?>
+                <td><?= $personal_data["user_id"] ?></td>
+                <td><?= $personal_data["user_name"] ?></td>
+                <td><?= $personal_data["user_sex"] ?></td>
+                <td><?= $personal_data["user_address"] ?></td>
+                <td><?= $personal_data["user_tel"] ?></td>
+                <td><?= $personal_data["user_mail_address"] ?></td>
+                <td><?= $personal_data["user_mobile_device"] ?></td>
+                <td>編集ボタン作成予定</td>
+            </tr><?php
+                }
+                    ?>
 
-    <!-- 増やすのはここまで -->
-  </table>
-  <!-- 検索結果表示終了 -->
-  <!-- ページ切り替えリンク生成 -->
-  <p class="page_select">
-    <?php
+        <!-- 増やすのはここまで -->
+    </table>
+    <!-- 検索結果表示終了 -->
+    <!-- ページ切り替えリンク生成 -->
+    <p class="page_select">
+        <?php
         for ($i = 1; $i <= $max_page_count; $i++) {
             if ($i === $now_display) {
                 echo $now_display . ' ';
             } else {
-                ?>
-    <a href="searchresult.php?<?= $search_querys ?>&page_number=<?= $i ?>"><?= $i ?></a>
-    <?php
+        ?>
+                <a href="searchresult.php?<?= $search_querys ?>&page_number=<?= $i ?>"><?= $i ?></a>
+        <?php
             }
         }
         ?>
-  </p>
-  <!-- ページ切り替えリンク生成〆 -->
+    </p>
+    <!-- ページ切り替えリンク生成〆 -->
 
-  <p><button type="button" onclick="location.href='search.php'" id="submit">検索画面へ戻る</button></p>
-  </p>
-  <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
+    <p><button type="button" onclick="location.href='search.php'" id="submit">検索画面へ戻る</button></p>
+    </p>
+    <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
 </main>
 <?php
 include('app/_parts/_footer.php');
