@@ -177,3 +177,7 @@ button:hover {
   display:flex;
   justify-content: center;
 }
+
+.edit_button {
+    font-size: x-small;
+}

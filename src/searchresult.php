@@ -178,7 +178,7 @@ $search_results = $stmt->fetchAll();
             <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_tel">電話番号</a></th>
             <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_mail_address">メールアドレス</a></th>
             <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_mobile_device">モバイル端末コード</a></th>
-            <th>編集ボタン作成予定</th>
+            <th>編集</th>
         </tr>
         <!-- これをforeachで増やす。 -->
         <?php
@@ -191,7 +191,7 @@ $search_results = $stmt->fetchAll();
                 <td><?= $personal_data["user_tel"] ?></td>
                 <td><?= $personal_data["user_mail_address"] ?></td>
                 <td><?= $personal_data["user_mobile_device"] ?></td>
-                <td>編集ボタン作成予定</td>
+                <td><form action="edit.php"><button input type="submit"  value="" class="edit_button">編集</button></form></td>
             </tr><?php
                 }
                     ?>
