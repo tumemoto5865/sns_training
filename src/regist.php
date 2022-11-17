@@ -7,8 +7,6 @@ createToken();
 ?>
 <h1>登録フォーム</h1>
 <div class="main">
-
-
   <form action="registProcess.php" method="post">
     <span class="input-form">
       <p>

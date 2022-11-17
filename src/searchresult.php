@@ -178,7 +178,7 @@ $search_results = $stmt->fetchAll();
             <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_tel">電話番号</a></th>
             <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_mail_address">メールアドレス</a></th>
             <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_mobile_device">モバイル端末コード</a></th>
-            <th>編集</th>
+            <th></th>
         </tr>
         <!-- これをforeachで増やす。 -->
         <?php
@@ -191,7 +191,12 @@ $search_results = $stmt->fetchAll();
                 <td><?= $personal_data["user_tel"] ?></td>
                 <td><?= $personal_data["user_mail_address"] ?></td>
                 <td><?= $personal_data["user_mobile_device"] ?></td>
-                <td><form action="edit.php"><button input type="submit"  value="" class="edit_button">編集</button></form></td>
+                <td>
+                    <form action="personal_data_edit.php" method="post">
+                        <input type="hidden" name="edit_record" value="<?= $personal_data["user_id"] ?>">
+                        <input type="submit" id="edit_button" value="編集・削除">
+                    </form>
+                </td>
             </tr><?php
                 }
                     ?>
@@ -216,8 +221,9 @@ $search_results = $stmt->fetchAll();
     <!-- ページ切り替えリンク生成〆 -->
 
     <p><button type="button" onclick="location.href='search.php'" id="submit">検索画面へ戻る</button></p>
+    <p>
+        <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
     </p>
-    <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
 </main>
 <?php
 include('app/_parts/_footer.php');
