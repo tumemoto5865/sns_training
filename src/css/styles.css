@@ -90,7 +90,7 @@ td:nth-child(8) {
 }
 
 
-form .input-form p {
+.input-form p {
     white-space: nowrap;
     display: flex;
     max-height: 24px;
@@ -130,7 +130,7 @@ input[type=password] {
 }
 
 
-#submit {
+.submit {
     display: block;
     height: 32px;
     width: 120px;
@@ -141,7 +141,7 @@ input[type=password] {
     text-align: center;
 }
 
-#submit:hover {
+.submit:hover {
     background-color: #DDDDEE;
 }
 
@@ -152,16 +152,17 @@ input[type=password] {
 }
 
 
-button {
+button, .button{
     display: block;
     margin: 8px auto;
+    padding: 4px;
     text-align: center;
     background-color: #BBB;
     border-radius: 8px;
     border-width: 1px;
 }
 
-button:hover {
+button, .button:hover {
     background-color: #DDDDEE;
 }
 

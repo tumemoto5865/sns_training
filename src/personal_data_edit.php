@@ -90,19 +90,18 @@ $edit_record = ($stmt->fetch());
         </span>
         <p>
             <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
-            <input type="submit" value="登録" id="submit">
+            <input type="submit" value="登録" class="submit">
         </p>
         </div>
     </form>
     <p>
         <form action="delete_process.php" method="post">
-
             <input type="hidden" name="edit_id" value="<?= $edit_record["user_id"] ?>">
             <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
-            <input type="submit" value="削除" id="submit">
+            <input type="submit" value="削除" class="submit">
         </form>
     </p>
-    <p><button type="button" onclick="history.back()" id="submit">戻る</button></p>
+    <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
 </main>
 <?php
 include('app/_parts/_footer.php');

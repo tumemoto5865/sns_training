@@ -220,9 +220,9 @@ $search_results = $stmt->fetchAll();
     </p>
     <!-- ページ切り替えリンク生成〆 -->
 
-    <p><button type="button" onclick="location.href='search.php'" id="submit">検索画面へ戻る</button></p>
+    <p><button type="button" onclick="location.href='search.php'" class="submit">検索画面へ戻る</button></p>
     <p>
-        <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
+        <button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
     </p>
 </main>
 <?php
