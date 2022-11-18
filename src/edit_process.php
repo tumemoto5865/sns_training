@@ -36,7 +36,7 @@ $edit_info = [
     "user_mobile_device" => (int)filter_input(INPUT_POST, "user_mobile_device")
 ];
 
-$stmt = $pdo->prepare('UPDATE `users_data` SET `user_id` = :user_id, `user_name` = :user_name, `user_sex` = :user_sex, `user_address` = :user_address, `user_tel` = :user_tel, `user_mail_address` = :user_mail_address, `user_mobile_device` = :user_mobile_device WHERE `user_id` = ' . '\'' . $edit_id . '\'');
+$stmt = $pdo->prepare('UPDATE `users_data` SET `user_id` = :user_id, `user_name` = :user_name, `user_sex` = :user_sex, `user_address` = :user_address, `user_tel` = :user_tel, `user_mail_address` = :user_mail_address, `user_mobile_device` = :user_mobile_device WHERE `user_id` = :edit_id');
 
 foreach ($edit_info as $key => $value) {
     if (gettype($value) === "string") {
@@ -45,6 +45,8 @@ foreach ($edit_info as $key => $value) {
         $stmt->bindValue(':' . $key, $value, PDO::PARAM_INT);
     }
 }
+
+$stmt->bindValue(':edit_id', $edit_id, PDO::PARAM_STR);
 
 $stmt->execute();
 
