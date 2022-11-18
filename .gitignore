@@ -2,3 +2,4 @@ data/
 .history/
 *.log
 xdebug.log
+src/hushcreate.php
