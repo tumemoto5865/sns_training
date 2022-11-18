@@ -25,7 +25,9 @@ include('app/_parts/_header.php');
 }
 $edit_id = filter_input(INPUT_POST, "edit_id");
 
-$stmt = $pdo->query('DELETE FROM `users_data` WHERE `user_id` = ' . '\'' . $edit_id . '\'');
+$stmt = $pdo->prepare('DELETE FROM `users_data` WHERE `user_id` = :edit_id');
+
+$stmt->bindValue(':edit_id', $edit_id, PDO::PARAM_STR);
 
 $stmt->execute();
 
