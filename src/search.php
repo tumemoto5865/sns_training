@@ -48,11 +48,11 @@ include('app/_parts/_header.php');
         </p>
       </span>
       <p>
-        <input type="submit" value="検索" id="submit">
+        <input type="submit" value="検索" class="submit">
       </div>
     </p>
   </form>
-  <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
+  <button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
 </main>
 <?php
 include('app/_parts/_footer.php');

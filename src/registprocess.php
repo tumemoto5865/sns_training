@@ -33,9 +33,10 @@ include('app/_parts/_header.php');
 ?>
 <?php
 //まずは渡ってきた値を受ける
-
+password_hash(hsc(filter_input(INPUT_POST, "user_password")) , $algo , $options);
 $regist_info = [
   "user_id" => hsc(filter_input(INPUT_POST, "user_id")),
+  "salt"=> (random_bytes(8)),
   "user_password" => hsc(filter_input(INPUT_POST, "user_password")),
   "user_name" => hsc(filter_input(INPUT_POST, "user_name")),
   "user_sex" => filter_input(INPUT_POST, "user_sex"),
@@ -59,7 +60,7 @@ $registed_id = $stmt->fetch();
 
 
 //未入力項目チェック
-if (in_array("", $regist_info, true)) { ?>
+if (in_array("", $regist_info, true)) {
       //キー名を表示のため日本語にする
     $japanse_key = [
       "user_id" => "ID",
@@ -71,6 +72,7 @@ if (in_array("", $regist_info, true)) { ?>
       "user_mail_address" => "メールアドレス",
       "user_mobile_device" => "モバイル端末"
     ];
+    ?>
   <ul class="alert_message">
     <?php
     foreach ($regist_info as $key => $entered) {
@@ -81,7 +83,7 @@ if (in_array("", $regist_info, true)) { ?>
     <?php }
     } ?>
   </ul>
-  <button type="button" onclick="history.back()" id="submit">戻る</button>
+  <button type="button" onclick="history.back()" class="submit">戻る</button>
 <?php
   //重複チェック
   //bool型を返す関数に対して配列オフセットを渡すと警告文が出る
@@ -89,18 +91,20 @@ if (in_array("", $regist_info, true)) { ?>
 ?>
   <p class="alert_message">そのIDは既に登録されているため使えません。</p>
   </div>
-  <button type="button" onclick="history.back()" id="submit">戻る</button>
+  <button type="button" onclick="history.back()" class="submit">戻る</button>
 <?php
   //PW確認チェック
 } elseif ($regist_info["user_password"] !== $user_pw_check) { ?>
   <p class="alert_message">
     <>確認パスワードが合致していません。
   </p>
-  <button type="button" onclick="history.back()" id="submit">戻る</button>
+  <button type="button" onclick="history.back()" class="submit">戻る</button>
 <?php
   //チェックが問題なければ登録
+  //Salt作成
+
 } else {
-  $stmt = $pdo->prepare('INSERT INTO users_data (user_id, user_password, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device) VALUES (?, ?, ?, ?, ?, ?, ?, ?)');
+  $stmt = $pdo->prepare('INSERT INTO users_data (user_id, user_password, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device,user_salt) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)');
   $i = 1;
   foreach ($regist_info as $split_info) {
     // echo ($i . PHP_EOL);//テスト用
@@ -115,7 +119,7 @@ if (in_array("", $regist_info, true)) { ?>
   $stmt->execute();
 ?>
   <p style="text-align: center; margin-top: 80px; font-size: x-large;">登録完了</p>
-  <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
+  <button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
 <?php
 }
 ?>
