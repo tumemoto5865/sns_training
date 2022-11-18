@@ -48,6 +48,8 @@ $regist_info = [
 //確認用のパスワードは別に受け取り
 $user_pw_check = hsc(filter_input(INPUT_POST, "user_pw_check"));
 
+
+
 //重複IDをチェックのため抽出
 $stmt = $pdo->prepare(
   "SELECT user_id FROM users_data WHERE user_id = ?"
