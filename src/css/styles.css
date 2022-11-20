@@ -109,7 +109,6 @@ label {
     text-align: right;
     min-width: 33%;
     margin-right: 4px;
-
 }
 
 #sex {
@@ -192,4 +191,14 @@ button, .button:hover {
 
 #edit_button:hover {
     background-color: #DDDDEE;
+}
+
+.manage {
+    margin: 0 auto;
+    margin: 0 20%;
+    }
+
+#manage_id,#manage_pw {
+    width: 30%;
+    min-width: 150px;
 }

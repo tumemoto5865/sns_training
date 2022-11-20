@@ -52,7 +52,7 @@ include('app/_parts/_header.php');
       </div>
     </p>
   </form>
-  <button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
+  <button type="button" onclick="location.href='db_manage'" class="submit">TOPへ戻る</button>
 </main>
 <?php
 include('app/_parts/_footer.php');

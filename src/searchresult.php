@@ -222,7 +222,7 @@ $search_results = $stmt->fetchAll();
 
     <p><button type="button" onclick="location.href='search.php'" class="submit">検索画面へ戻る</button></p>
     <p>
-        <button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
+        <button type="button" onclick="location.href='db_manage'" class="submit">TOPへ戻る</button>
     </p>
 </main>
 <?php

@@ -58,7 +58,7 @@ createToken();
     </p>
 </div>
 </form>
-<button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
+<button type="button" onclick="location.href='db_manage.php'" class="submit">TOPへ戻る</button>
 
 <?php
 include('app/_parts/_footer.php');

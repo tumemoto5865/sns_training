@@ -4,7 +4,7 @@ include('app/_parts/_header.php');
 createToken();
 ?>
 <main>
-    <h1>データベース練習</h1>
+    <h1>DB管理</h1>
     <p><a href="regist.php">登録</a></p>
     <p><a href="search.php">検索</a></p>
 
