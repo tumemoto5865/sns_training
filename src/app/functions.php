@@ -23,6 +23,12 @@ function validateToken()
   }
 }
 //データベース接続
+if (isset($_POST["manage_id"])) {
+$_SESSION['manage_id'] = hsc($_POST["manage_id"]);
+}
+if (isset($_POST["manage_id"])) {
+$_SESSION['manage_pw'] = hsc($_POST["manage_pw"]);
+}
 try {
     //データベースへ接続
     $pdo = new PDO(
