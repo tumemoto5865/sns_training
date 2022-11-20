@@ -21,6 +21,8 @@ createtoken();
             <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
             <p><input type="submit" value="送信" class="submit"></p>
         </form>
+        <p>IDはtest_db_docker</p>
+        <p>PWはtest_db_docker_pass<p>
     </div>
 </main>
 <?php

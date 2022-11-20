@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();//セッション開始
 
 //文字実体参照の関数。
@@ -21,4 +21,18 @@ function validateToken()
   ) {
     exit('Invalid post request');
   }
+}
+//データベース接続
+try {
+    //データベースへ接続
+    $pdo = new PDO(
+        'mysql:host=mysql;dbname=test_db;charset=utf8mb4',
+        //ユーザー名
+        $_SESSION['manage_id'],
+        //パス
+        $_SESSION['manage_pw']
+    );
+} catch (PDOException $e) {
+    echo $e->getMessage();
+    exit;
 }

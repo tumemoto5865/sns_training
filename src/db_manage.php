@@ -1,5 +1,8 @@
 <?php
 require('app/functions.php');
+$_SESSION['manage_id'] = $_POST["manage_id"];
+$_SESSION['manage_pw'] = $_POST["manage_pw"];
+
 include('app/_parts/_header.php');
 createToken();
 ?>
