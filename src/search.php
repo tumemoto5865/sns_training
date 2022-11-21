@@ -1,7 +1,7 @@
 <?php
-require('app/manage_parts/functions.php');
+require('app/functions.php');
+validateLogin();
 include('app/manage_parts/_header.php');
-
 ?>
 <main>
   <h1>検索フォーム</h1>

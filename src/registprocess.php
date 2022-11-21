@@ -1,14 +1,7 @@
 <?php
-require('app/manage_parts/functions.php');
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    validateToken();
-}
-
-//接続テスト
-//$stmt = $pdo->query("SELECT 1 + 1");
-//$result = $stmt->fetch();
-// var_dump($result);
-
+require('app/functions.php');
+validateLogin();
+require('app/connect_database.php');
 include('app/manage_parts/_header.php');
 ?>
 <?php
@@ -70,13 +63,12 @@ if (in_array("", $regist_info, true)) {
 } elseif (!empty($registed_id)) {
 ?>
     <p class="alert_message">そのIDは既に登録されているため使えません。</p>
-    </div>
     <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
 <?php
     //PW確認チェック
 } elseif ($regist_info["user_password"] !== $user_pw_check) { ?>
     <p class="alert_message">
-        <>確認パスワードが合致していません。
+        確認パスワードが合致していません。
     </p>
     <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
 <?php

@@ -1,8 +1,8 @@
 <?php
-require('app/manage_parts/functions.php');
+require('app/functions.php');
+validateLogin();
 include('app/manage_parts/_header.php');
 
-createToken();
 ?>
 <h1>登録フォーム</h1>
 <div class="main">
@@ -52,7 +52,6 @@ createToken();
       </p>
     </span>
     <p>
-      <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
       <input type="submit" value="登録" class="submit">
     </p>
 </div>

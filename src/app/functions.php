@@ -22,23 +22,18 @@ function validateToken()
     exit('Invalid post request');
   }
 }
-//データベース接続
-if (isset($_POST["manage_id"])) {
-$_SESSION['manage_id'] = hsc($_POST["manage_id"]);
+
+//ログイン情報チェック
+function validateLogin() {
+    if ((empty($_SESSION['login'])) ||
+    $_SESSION['login'] !== $_COOKIE['login']) {
+        include('error_parts/_header.php');
+        ?>
+        <p class="alert_message">ログインされていません。</p>
+        <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
+        <?php
+        include('error_parts/_footer.php');
+        exit;
+    }
 }
-if (isset($_POST["manage_id"])) {
-$_SESSION['manage_pw'] = hsc($_POST["manage_pw"]);
-}
-try {
-    //データベースへ接続
-    $pdo = new PDO(
-        'mysql:host=mysql;dbname=test_db;charset=utf8mb4',
-        //ユーザー名
-        $_SESSION['manage_id'],
-        //パス
-        $_SESSION['manage_pw']
-    );
-} catch (PDOException $e) {
-    echo $e->getMessage();
-    exit;
-}
+?>

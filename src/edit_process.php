@@ -1,9 +1,8 @@
 <?php
-require('app/manage_parts/functions.php');
+require('app/functions.php');
+validateLogin();
+require('app/connect_database.php');
 include('app/manage_parts/_header.php');
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    validateToken();
-}
 
 $edit_id = filter_input(INPUT_POST, "edit_id");
 

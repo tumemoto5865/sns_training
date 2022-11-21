@@ -1,7 +1,8 @@
 <?php
 require('app/functions.php');
+validateLogin();
+require('app/connect_database.php');
 include('app/manage_parts/_header.php');
-createToken();
 
 // echo($_POST["edit_record"]);//post受け取りテスト
 $stmt = $pdo->query('SELECT user_id, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device FROM users_data WHERE user_id = "' . $_POST["edit_record"] . '"');
@@ -70,7 +71,6 @@ $edit_record = ($stmt->fetch());
             </p>
         </span>
         <p>
-            <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
             <input type="submit" value="登録" class="submit">
         </p>
         </div>
@@ -78,7 +78,6 @@ $edit_record = ($stmt->fetch());
     <p>
         <form action="delete_process.php" method="post">
             <input type="hidden" name="edit_id" value="<?= $edit_record["user_id"] ?>">
-            <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
             <input type="submit" value="削除" class="submit">
         </form>
     </p>

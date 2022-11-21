@@ -1,30 +1,29 @@
 <?php
-require('app/manage_parts/functions.php');
+require('app/functions.php');
+//このページからのログイン以外は受け付けない。
+createToken();
 include('app/user_parts/_header.php');
 
-if (isset($_post['logout'])) {
-   unset($_SESSION['manage_id']);
-   unset($_SESSION['manage_pw']);
+if (isset($_POST['logout'])) {
+    if (isset($_SESSION['login'])) {
+        unset($_SESSION['login']);
+    }
 }
-
-createToken()
 ?>
 <main>
 <h1>db_test</h1>
-<p>ユーザーログイン</a></p>
-<div class="manage">
-        <form action="db_manage.php" method="post" class="manage">
+<p>ユーザーログイン</p>
+        <form action="user_login_process.php" method="post">
             <span class="input-form">
                 <p>
-                    <label for="manage_id">ID</label for="manage_id" class="manage_label">
-                    <input type="text" name="manage_id" id="manage_id"><br />
+                    <label for="end_user_id" class="user_label">ID</label>
+                    <input type="text" name="end_user_id" id="end_user_id"><br />
                 </p>
                 <p>
-                    <label for="manage_pw" class="manage_label">パスワード</label>
-                    <input type="text" name="manage_pw" id="manage_pw"><br />
+                    <label for="end_user_pw" class="user_label">パスワード</label>
+                    <input type="password" name="end_user_pw" id="end_user_pw"><br />
                 </p>
             </span>
-            <!-- 念のためチェックトークンを生成してそれも送信 -->
             <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
             <p><input type="submit" value="送信" class="submit"></p>
         </form>

@@ -7,6 +7,14 @@ CREATE TABLE sample_table (
 
 INSERT INTO sample_table (name) VALUES ("昭和"),("平成"),("令和");
 
+DROP TABLE IF EXISTS managers_data;
+CREATE TABLE `managers_data` (
+  `manager_id` varchar(24) UNIQUE COLLATE utf8mb4_general_ci NOT NULL,
+  `manager_password` varchar(256) COLLATE utf8mb4_general_ci NOT NULL
+);
+
+INSERT INTO `managers_data` (`manager_id`, `manager_password`) VALUES
+('abc', '$2y$10$WgO10PsbX5NTH5xF3D.AUecjLGNvHwB01Kslv0IhcM/.0imluhMVy');
 
 DROP TABLE IF EXISTS users_data;
 CREATE TABLE `users_data` (

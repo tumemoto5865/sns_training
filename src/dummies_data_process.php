@@ -1,17 +1,8 @@
 <?php
-require('app/manage_parts/functions.php');
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-  validateToken();
-}
-
-
-//接続テスト
-//$stmt = $pdo->query("SELECT 1 + 1");
-//$result = $stmt->fetch();
-// var_dump($result);
-
+require('app/functions.php');
+validateLogin();
+require('app/connect_database.php');
 include('app/manage_parts/_header.php');
-validateToken()
 ?>
 <?php
 //値を受け取る

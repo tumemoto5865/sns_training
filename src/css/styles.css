@@ -116,7 +116,7 @@ label {
 }
 
 input[type="text"],
-input[type=password] {
+input[type="password"] {
     width: 33%;
     min-width: 300px;
     border-style: solid;
@@ -193,13 +193,12 @@ button, .button:hover {
     background-color: #DDDDEE;
 }
 
-.manage {
-    margin: 0 auto;
-    margin: 0 20%;
-    }
+.user_label, .manager_label {
+    min-width: 40%;
+}
 
-#manage_id,#manage_pw {
-    width: 30%;
+#manager_id,#manager_pw,#end_user_id,#end_user_pw {
+    width: 20%;
     min-width: 150px;
 }
 
