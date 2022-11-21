@@ -1,8 +1,8 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 //このページからのログイン以外は受け付けない。
 createToken();
-include('app/manage_parts/_header.php');
+include('../private/app/manage_header.php');
 ?>
 <main>
 <h1>DB管理システムログイン</h1>
@@ -24,4 +24,4 @@ include('app/manage_parts/_header.php');
         <p>PWはxyz<p>
 </main>
 <?php
-include('app/manage_parts/_footer.php');
+include('../private/app/manage_footer.php');

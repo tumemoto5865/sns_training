@@ -1,7 +1,7 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 validateLogin();
-require('app/connect_database.php');
+require('../private/app/connect_database.php');
 
 //cookieに検索のURLクエリを保存しておく。
 if (strpos($_SERVER['HTTP_REFERER'], 'search.php')) {
@@ -41,7 +41,7 @@ if (!empty($_GET["sort_column"])) {
 if (isset($_GET['display_items_count'])) {
     setcookie("display_items_count", $_GET['display_items_count']);
 }
-include('app/manage_parts/_header.php');
+include('../private/app/manage_header.php');
 validateLogin();
 ?>
 <?php
@@ -210,4 +210,4 @@ $search_results = $stmt->fetchAll();
     </p>
 </main>
 <?php
-include('app/manage_parts/_footer.php');
+include('../private/app/manage_footer.php');

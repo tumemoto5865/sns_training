@@ -1,28 +1,28 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 if ($_SERVER['REQUEST_METHOD'] === "POST") {
     //トークンチェック。ログインページ以外からのPOSTリクエストは受け付けない
     validateToken();
-    
+
     //認証
     $manager_info = [
         'manager_id' => hsc(filter_input(INPUT_POST, 'manager_id')),
         'manager_pw' => hsc(filter_input(INPUT_POST, 'manager_pw')),
     ];
 
-    require('app/connect_database.php');
+    require('../private/app/connect_database.php');
     $stmt = $pdo->prepare('SELECT * FROM managers_data WHERE `manager_id` = :manager_id');
     $stmt->bindValue(':manager_id', $manager_info['manager_id'], PDO::PARAM_STR);
     $stmt->execute();
     $registerd_info = $stmt->fetch();
 
     if (empty($registerd_info)) {
-        include('app/error_parts/_header.php');
+        include('../private/app/error_header.php');
         ?>
         <p class="alert_message">ログイン情報が間違っています。</p>
         <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
         <?php
-        include('app/error_parts/_footer.php');
+        include('../private/app/error_footer.php');
         exit;
     } elseif (
         password_verify(
@@ -33,18 +33,18 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         $_SESSION['login'] = bin2hex(random_bytes(32));
         setcookie('login', $_SESSION['login']);
     } else {
-        include('app/error_parts/_header.php');
+        include('../private/app/error_header.php');
         ?>
         <p class="alert_message">ログイン情報が間違っています。</p>
         <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
         <?php
-        include('app/error_parts/_footer.php');
+        include('../private/app/error_footer.php');
         exit;
     }
 } else {
     validateLogin();
 }
-include('app/manage_parts/_header.php');
+include('../private/app/manage_header.php');
 ?>
 <main>
     <h1>DB管理</h1>
@@ -61,4 +61,4 @@ include('app/manage_parts/_header.php');
     </p>
 </main>
 <?php
-include('app/manage_parts/_footer.php');
+include('../private/app/manage_footer.php');

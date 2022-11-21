@@ -1,8 +1,8 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 validateLogin();
-require('app/connect_database.php');
-include('app/manage_parts/_header.php');
+require('../private/app/connect_database.php');
+include('../private/app/manage_header.php');
 $edit_id = filter_input(INPUT_POST, "edit_id");
 
 $stmt = $pdo->prepare('DELETE FROM `users_data` WHERE `user_id` = :edit_id');
@@ -15,4 +15,4 @@ $stmt->execute();
 <p class="alert_message">削除完了</p>
 <p><button type="button" onclick="history.go(-2)" class="submit">戻る</button></p>
 <?php
-include('app/manage_parts/_footer.php');
+include('../private/app/manage_footer.php');

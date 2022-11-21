@@ -1,8 +1,8 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 validateLogin();
-require('app/connect_database.php');
-include('app/manage_parts/_header.php');
+require('../private/app/connect_database.php');
+include('../private/app/manage_header.php');
 
 // echo($_POST["edit_record"]);//post受け取りテスト
 $stmt = $pdo->query('SELECT user_id, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device FROM users_data WHERE user_id = "' . $_POST["edit_record"] . '"');
@@ -81,7 +81,7 @@ $edit_record = ($stmt->fetch());
             <input type="submit" value="削除" class="submit">
         </form>
     </p>
-    <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
+    <p><button type="button" onclick="history.go(-1)" class="submit">戻る</button></p>
 </main>
 <?php
-include('app/manage_parts/_footer.php');
+include('../private/app/manage_footer.php');
