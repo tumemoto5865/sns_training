@@ -81,7 +81,7 @@ $edit_record = ($stmt->fetch());
             <input type="submit" value="削除" class="submit">
         </form>
     </p>
-    <p><button type="button" onclick="history.go(-1)" class="submit">戻る</button></p>
+    <p><button type="button" onclick="location.href='searchresult.php'" class="submit">戻る</button></p>
 </main>
 <?php
 include('../private/app/manage_footer.php');

@@ -13,6 +13,6 @@ $stmt->execute();
 
 ?>
 <p class="alert_message">削除完了</p>
-<p><button type="button" onclick="history.go(-2)" class="submit">戻る</button></p>
+<p><button type="button" onclick="location.href='searchresult.php'" class="submit">戻る</button></p>
 <?php
 include('../private/app/manage_footer.php');

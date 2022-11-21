@@ -3,18 +3,67 @@ require('../private/app/functions.php');
 validateLogin();
 require('../private/app/connect_database.php');
 
+
+include('../private/app/manage_header.php');
+validateLogin();
+?>
+<?php
 //cookieに検索のURLクエリを保存しておく。
+$search_info = [];
 if (strpos($_SERVER['HTTP_REFERER'], 'search.php')) {
     setcookie('search_querys', $_SERVER['QUERY_STRING']);
-    $search_querys = $_SERVER['QUERY_STRING'];
+    parse_str($_SERVER['QUERY_STRING'], $search_querys);
 } else {
-    $search_querys = $_COOKIE['search_querys'];
+    parse_str($_COOKIE['search_querys'], $search_querys);
 }
 
 //ソート情報がcookieに保存されていればそれを入れた配列を、cookieが存在しなければ空の配列を作成
+//GET情報取得
+if (!empty($_GET['user_id'])) {
+    $search_info['user_id'] = $_GET['user_id'];
+}
+if (!empty($_GET['user_name'])) {
+    $search_info['user_name'] = $_GET['user_name'];
+}
+if (!empty($_GET['user_sex'])) {
+    (int)$search_info['user_sex'] = $_GET['user_sex'];
+}
+if (!empty($_GET['user_address'])) {
+    $search_info['user_address'] = $_GET['user_address'];
+}
+if (!empty($_GET['user_tel'])) {
+    $search_info['user_tel'] = $_GET['user_tel'];
+}
+if (!empty($_GET['user_mail_address'])) {
+    $search_info['user_mail_address'] = $_GET['user_mail_address'];
+}
+if (!empty($_GET['user_mobile_device'])) {
+    (int)$search_info['user_mobile_device'] = $_GET['user_mobile_device'];
+}
+
+// var_dump($search_info);//テスト
+$where_conndition = function ($search_info) {
+    $where_conndition = "";
+    $count = 1;
+    foreach ($search_info as $key => $value) {
+        if (!empty($key)) {
+            if ($count === 1) {
+                $where_conndition = " WHERE " . $key . " LIKE :" . $key;
+            } else {
+                $where_conndition .= " AND " . $key . " LIKE :" . $key;
+            }
+            $count++;
+        }
+    }
+    return $where_conndition;
+};
+
+$search_querys = (http_build_query($search_querys));
+// echo $where_conndition($search_info);//テスト
+
 $sort_info = [];
 if (!empty($_COOKIE['sort_info'])) {
-    parse_str($_COOKIE['sort_info'], $sort_info);
+    parse_str($_COOKIE['sort_info'], $sort_info);//クエリ文字列を変数に
 }
 //get情報が渡ってきたら追加していく。cookieも更新。
 if (!empty($_GET["sort_column"])) {
@@ -41,50 +90,6 @@ if (!empty($_GET["sort_column"])) {
 if (isset($_GET['display_items_count'])) {
     setcookie("display_items_count", $_GET['display_items_count']);
 }
-include('../private/app/manage_header.php');
-validateLogin();
-?>
-<?php
-//GET情報取得
-$search_info = [];
-if (!empty($_GET['user_id'])) {
-    $search_info['user_id'] = $_GET['user_id'];
-}
-if (!empty($_GET['user_name'])) {
-    $search_info['user_name'] = $_GET['user_name'];
-}
-if (!empty($_GET['user_sex'])) {
-    (int)$search_info['user_sex'] = $_GET['user_sex'];
-}
-if (!empty($_GET['user_address'])) {
-    $search_info['user_address'] = $_GET['user_address'];
-}
-if (!empty($_GET['user_tel'])) {
-    $search_info['user_tel'] = $_GET['user_tel'];
-}
-if (!empty($_GET['user_mail_address'])) {
-    $search_info['user_mail_address'] = $_GET['user_mail_address'];
-}
-if (!empty($_GET['user_mobile_device'])) {
-    (int)$search_info['user_mobile_device'] = $_GET['user_mobile_device'];
-}
-// var_dump($search_info);//テスト
-$where_conndition = function ($search_info) {
-    $where_conndition = "";
-    $count = 1;
-    foreach ($search_info as $key => $value) {
-        if (!empty($key)) {
-            if ($count === 1) {
-                $where_conndition = " WHERE " . $key . " LIKE :" . $key;
-            } else {
-                $where_conndition .= " AND " . $key . " LIKE :" . $key;
-            }
-            $count++;
-        }
-    }
-    return $where_conndition;
-};
-// echo $where_conndition($search_info);//テスト
 
 //ORDER BY文生成
 $oreder_by_condition = function ($sort_info) {
@@ -115,11 +120,9 @@ foreach ($search_info as $key => $value) {
 }
 
 //ここでソートのバインドを行う
-
 $stmt->execute();
 $search_results = $stmt->fetchAll();
 // var_dump($search_results);//テスト
-
 ?>
 <main>
     <h1>検索結果</h1>
