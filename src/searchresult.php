@@ -85,42 +85,42 @@ if (!empty($_GET['user_mobile_device'])) {
     (int)$search_info['user_mobile_device'] = $_GET['user_mobile_device'];
 }
 // var_dump($search_info);//テスト
-$WHERE_condition = function ($search_info) {
-    $WHERE_condition = "";
+$where_conndition = function ($search_info) {
+    $where_conndition = "";
     $count = 1;
     foreach ($search_info as $key => $value) {
         if (!empty($key)) {
             if ($count === 1) {
-                $WHERE_condition = " WHERE " . $key . " LIKE :" . $key;
+                $where_conndition = " WHERE " . $key . " LIKE :" . $key;
             } else {
-                $WHERE_condition .= " AND " . $key . " LIKE :" . $key;
+                $where_conndition .= " AND " . $key . " LIKE :" . $key;
             }
             $count++;
         }
     }
-    return $WHERE_condition;
+    return $where_conndition;
 };
-// echo $WHERE_condition($search_info);//テスト
+// echo $where_conndition($search_info);//テスト
 
 //ORDER BY文生成
-$OEDER_BY_condition = function ($sort_info) {
-    $OEDER_BY_condition = "";
+$oreder_by_condition = function ($sort_info) {
+    $oreder_by_condition = "";
     $count = 1;
     foreach ($sort_info as $key => $order_condition) {
         if (!empty($key)) {
             if ($count === 1) {
-                $OEDER_BY_condition = " ORDER BY `" . $key . "` " . $order_condition;
+                $oreder_by_condition = " ORDER BY `" . $key . "` " . $order_condition;
             } else {
-                $OEDER_BY_condition .= ", `" . $key . "` " . $order_condition;
+                $oreder_by_condition .= ", `" . $key . "` " . $order_condition;
             }
             $count++;
         }
     }
-    return $OEDER_BY_condition;
+    return $oreder_by_condition;
 };
-// echo $OEDER_BY_condition($sort_info);//テスト
+// echo $oreder_by_condition($sort_info);//テスト
 
-$stmt = $pdo->prepare('SELECT user_id, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device FROM users_data' . $WHERE_condition($search_info) . $OEDER_BY_condition($sort_info));
+$stmt = $pdo->prepare('SELECT user_id, user_name, user_sex, user_address, user_tel, user_mail_address, user_mobile_device FROM users_data' . $where_conndition($search_info) . $oreder_by_condition($sort_info));
 
 foreach ($search_info as $key => $value) {
     if (gettype($value) === "string") {
@@ -178,7 +178,7 @@ $search_results = $stmt->fetchAll();
             <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_tel">電話番号</a></th>
             <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_mail_address">メールアドレス</a></th>
             <th><a href="searchresult.php?<?= $search_querys ?>&sort_column=user_mobile_device">モバイル端末コード</a></th>
-            <th>編集ボタン作成予定</th>
+            <th></th>
         </tr>
         <!-- これをforeachで増やす。 -->
         <?php
@@ -191,7 +191,12 @@ $search_results = $stmt->fetchAll();
                 <td><?= $personal_data["user_tel"] ?></td>
                 <td><?= $personal_data["user_mail_address"] ?></td>
                 <td><?= $personal_data["user_mobile_device"] ?></td>
-                <td>編集ボタン作成予定</td>
+                <td>
+                    <form action="personal_data_edit.php" method="post">
+                        <input type="hidden" name="edit_record" value="<?= $personal_data["user_id"] ?>">
+                        <input type="submit" id="edit_button" value="編集・削除">
+                    </form>
+                </td>
             </tr><?php
                 }
                     ?>
@@ -215,9 +220,10 @@ $search_results = $stmt->fetchAll();
     </p>
     <!-- ページ切り替えリンク生成〆 -->
 
-    <p><button type="button" onclick="location.href='search.php'" id="submit">検索画面へ戻る</button></p>
+    <p><button type="button" onclick="location.href='search.php'" class="submit">検索画面へ戻る</button></p>
+    <p>
+        <button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
     </p>
-    <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
 </main>
 <?php
 include('app/_parts/_footer.php');

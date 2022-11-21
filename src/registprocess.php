@@ -81,7 +81,7 @@ if (in_array("", $regist_info, true)) { ?>
     <?php }
     } ?>
   </ul>
-  <button type="button" onclick="history.back()" id="submit">戻る</button>
+  <button type="button" onclick="history.back()" class="submit">戻る</button>
 <?php
   //重複チェック
   //bool型を返す関数に対して配列オフセットを渡すと警告文が出る
@@ -89,14 +89,14 @@ if (in_array("", $regist_info, true)) { ?>
 ?>
   <p class="alert_message">そのIDは既に登録されているため使えません。</p>
   </div>
-  <button type="button" onclick="history.back()" id="submit">戻る</button>
+  <button type="button" onclick="history.back()" class="submit">戻る</button>
 <?php
   //PW確認チェック
 } elseif ($regist_info["user_password"] !== $user_pw_check) { ?>
   <p class="alert_message">
     <>確認パスワードが合致していません。
   </p>
-  <button type="button" onclick="history.back()" id="submit">戻る</button>
+  <button type="button" onclick="history.back()" class="submit">戻る</button>
 <?php
   //チェックが問題なければ登録
 } else {
@@ -115,7 +115,7 @@ if (in_array("", $regist_info, true)) { ?>
   $stmt->execute();
 ?>
   <p style="text-align: center; margin-top: 80px; font-size: x-large;">登録完了</p>
-  <button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
+  <button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
 <?php
 }
 ?>

@@ -1,10 +1,10 @@
 ﻿DROP TABLE IF EXISTS sample_table;
- 
+
 CREATE TABLE sample_table (
 	id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	name TEXT NOT NULL
 ) ENGINE InnoDB CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
- 
+
 INSERT INTO sample_table (name) VALUES ("昭和"),("平成"),("令和");
 
 DROP TABLE IF EXISTS users_data;
@@ -29,7 +29,7 @@ INSERT INTO users_data (user_id, user_password, user_name, user_sex, user_addres
 
 
 DROP TABLE IF EXISTS dummies_data;
-CREATE TABLE dammies_data (
+CREATE TABLE dummies_data (
 	user_id VARCHAR(24) UNIQUE NOT NULL,
 	user_password VARCHAR(24) NOT NULL,
 	user_name VARCHAR(32) NOT NULL,

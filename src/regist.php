@@ -7,8 +7,6 @@ createToken();
 ?>
 <h1>登録フォーム</h1>
 <div class="main">
-
-
   <form action="registProcess.php" method="post">
     <span class="input-form">
       <p>
@@ -56,11 +54,11 @@ createToken();
     </span>
     <p>
       <input type="hidden" name="token" value="<?= hsc($_SESSION['token']); ?>">
-      <input type="submit" value="登録" id="submit">
+      <input type="submit" value="登録" class="submit">
     </p>
 </div>
 </form>
-<button type="button" onclick="location.href='dbtest.php'" id="submit">TOPへ戻る</button>
+<button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
 
 <?php
 include('app/_parts/_footer.php');
