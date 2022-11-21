@@ -1,5 +1,5 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 try {
     //データベースへ接続
     $pdo = new PDO(
@@ -21,7 +21,7 @@ try {
 }
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     validateToken();
-include('app/_parts/_header.php');
+include('../private/app/manage_header.php');
 }
 $edit_id = filter_input(INPUT_POST, "edit_id");
 
@@ -35,4 +35,4 @@ $stmt->execute();
 <p class="alert_message">削除完了</p>
 <p><button type="button" onclick="history.go(-2)" class="submit">戻る</button></p>
 <?php
-include('app/_parts/_footer.php');
+include('../private/app/manage_footer.php');

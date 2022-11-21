@@ -1,5 +1,5 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 try {
     //データベースへ接続
     $pdo = new PDO(
@@ -19,7 +19,7 @@ try {
     echo $e->getMessage();
     exit;
 }
-include('app/_parts/_header.php');
+include('../private/app/manage_header.php');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     validateToken();
 }
@@ -54,4 +54,4 @@ $stmt->execute();
 <p class="alert_message">編集完了</p>
 <p><button type="button" onclick="history.go(-2)" class="submit">戻る</button></p>
 <?php
-include('app/_parts/_footer.php');
+include('../private/app/manage_footer.php');

@@ -2,7 +2,7 @@
 
 use function PHPSTORM_META\type;
 
-require('app/functions.php');
+require('../private/app/functions.php');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   validateToken();
 }
@@ -32,7 +32,7 @@ try {
 //$result = $stmt->fetch();
 // var_dump($result);
 
-include('app/_parts/_header.php');
+include('../private/app/manage_header.php');
 validateToken()
 ?>
 <?php
@@ -68,4 +68,4 @@ WHERE NOT EXISTS (
 ?>
 <button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
 <?php
-include('app/_parts/_footer.php');
+include('../private/app/manage_footer.php');

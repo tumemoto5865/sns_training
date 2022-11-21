@@ -1,5 +1,5 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   validateToken();
 }
@@ -29,7 +29,7 @@ try {
 //$result = $stmt->fetch();
 // var_dump($result);
 
-include('app/_parts/_header.php');
+include('../private/app/manage_header.php');
 ?>
 <?php
 //まずは渡ってきた値を受ける
@@ -59,7 +59,7 @@ $registed_id = $stmt->fetch();
 
 
 //未入力項目チェック
-if (in_array("", $regist_info, true)) { ?>
+if (in_array("", $regist_info, true)) {
       //キー名を表示のため日本語にする
     $japanse_key = [
       "user_id" => "ID",
@@ -70,7 +70,7 @@ if (in_array("", $regist_info, true)) { ?>
       "user_tel" => "電話番号",
       "user_mail_address" => "メールアドレス",
       "user_mobile_device" => "モバイル端末"
-    ];
+    ]; ?>
   <ul class="alert_message">
     <?php
     foreach ($regist_info as $key => $entered) {
@@ -94,7 +94,7 @@ if (in_array("", $regist_info, true)) { ?>
   //PW確認チェック
 } elseif ($regist_info["user_password"] !== $user_pw_check) { ?>
   <p class="alert_message">
-    <>確認パスワードが合致していません。
+    確認パスワードが合致していません。
   </p>
   <button type="button" onclick="history.back()" class="submit">戻る</button>
 <?php
@@ -120,4 +120,4 @@ if (in_array("", $regist_info, true)) { ?>
 }
 ?>
 <?php
-include('app/_parts/_footer.php');
+include('../private/app/manage_footer.php');

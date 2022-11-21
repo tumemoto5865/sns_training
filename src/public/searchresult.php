@@ -1,5 +1,5 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 try {
     //データベースへ接続
     $pdo = new PDO(
@@ -58,7 +58,7 @@ if (!empty($_GET["sort_column"])) {
 if (isset($_GET['display_items_count'])) {
     setcookie("display_items_count", $_GET['display_items_count']);
 }
-include('app/_parts/_header.php');
+include('../private/app/manage_header.php');
 ?>
 <?php
 //GET情報取得
@@ -226,4 +226,4 @@ $search_results = $stmt->fetchAll();
     </p>
 </main>
 <?php
-include('app/_parts/_footer.php');
+include('../private/app/manage_footer.php');

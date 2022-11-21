@@ -1,7 +1,7 @@
 <?php
 
-require('app/functions.php');
-include('app/_parts/_header.php');
+require('../private/app/functions.php');
+include('../private/app/manage_header.php');
 
 createToken();
 ?>
@@ -61,4 +61,4 @@ createToken();
 <button type="button" onclick="location.href='dbtest.php'" class="submit">TOPへ戻る</button>
 
 <?php
-include('app/_parts/_footer.php');
+include('../private/app/manage_footer.php');

@@ -1,5 +1,5 @@
 <?php
-require('app/functions.php');
+require('../private/app/functions.php');
 try {
     //データベースへ接続
     $pdo = new PDO(
@@ -19,7 +19,7 @@ try {
     echo $e->getMessage();
     exit;
 }
-include('app/_parts/_header.php');
+include('../private/app/manage_header.php');
 createToken();
 
 // echo($_POST["edit_record"]);//post受け取りテスト
@@ -31,7 +31,7 @@ $edit_record = ($stmt->fetch());
 <main>
     <h1>データ編集・削除</h1>
 
-    <form action="edit_process.php" method="post">
+    <form action="../private/edit_process.php" method="post">
         <span class="input-form">
             <p>
                 <input type="hidden" name="edit_id" value="<?= $edit_record["user_id"] ?>">
@@ -104,4 +104,4 @@ $edit_record = ($stmt->fetch());
     <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
 </main>
 <?php
-include('app/_parts/_footer.php');
+include('../private/app/manage_footer.php');

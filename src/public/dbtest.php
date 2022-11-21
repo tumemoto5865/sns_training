@@ -1,6 +1,6 @@
 <?php
-require('app/functions.php');
-include('app/_parts/_header.php');
+require('../private/app/functions.php');
+include('../private/app/manage_header.php');
 createToken();
 ?>
 <main>
@@ -21,4 +21,4 @@ createToken();
     </p>
 </main>
 <?php
-include('app/_parts/_footer.php');
+include('../private/app/manage_footer.php');
