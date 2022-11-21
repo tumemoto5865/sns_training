@@ -202,3 +202,16 @@ button, .button:hover {
     width: 30%;
     min-width: 150px;
 }
+
+#manage_link {
+    margin-top: 64px;
+    font-size: larger;
+}
+
+footer {
+    margin-top: 64px;
+}
+footer > p{
+    display: flex;
+    justify-content: center;
+}

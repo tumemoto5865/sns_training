@@ -1,6 +1,6 @@
 <?php
 require('app/functions.php');
-include('app/_parts/_header.php');
+include('app/manage_parts/_header.php');
 createToken();
 
 // echo($_POST["edit_record"]);//post受け取りテスト
@@ -85,4 +85,4 @@ $edit_record = ($stmt->fetch());
     <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
 </main>
 <?php
-include('app/_parts/_footer.php');
+include('app/manage_parts/_footer.php');

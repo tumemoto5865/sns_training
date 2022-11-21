@@ -1,5 +1,5 @@
 <?php
-require('app/functions.php');
+require('app/manage_parts/functions.php');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   validateToken();
 }
@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 //$result = $stmt->fetch();
 // var_dump($result);
 
-include('app/_parts/_header.php');
+include('app/manage_parts/_header.php');
 validateToken()
 ?>
 <?php
@@ -44,6 +44,6 @@ WHERE NOT EXISTS (
 <?php
 }
 ?>
-<button type="button" onclick="location.href='db_manage.php'" class="submit">TOPへ戻る</button>
+<button type="button" onclick="location.href='db_manage.php'" class="submit">管理TOPへ戻る</button>
 <?php
-include('app/_parts/_footer.php');
+include('app/manage_parts/_footer.php');

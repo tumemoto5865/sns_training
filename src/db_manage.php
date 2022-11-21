@@ -1,7 +1,7 @@
 <?php
-require('app/functions.php');
+require('app/manage_parts/functions.php');
 
-include('app/_parts/_header.php');
+include('app/manage_parts/_header.php');
 createToken();
 ?>
 <main>
@@ -22,4 +22,4 @@ createToken();
     </p>
 </main>
 <?php
-include('app/_parts/_footer.php');
+include('app/manage_parts/_footer.php');

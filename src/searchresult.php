@@ -1,5 +1,5 @@
 <?php
-require('app/functions.php');
+require('app/manage_parts/functions.php');
 
 //cookieに検索のURLクエリを保存しておく。
 if (strpos($_SERVER['HTTP_REFERER'], 'search.php')) {
@@ -39,7 +39,7 @@ if (!empty($_GET["sort_column"])) {
 if (isset($_GET['display_items_count'])) {
     setcookie("display_items_count", $_GET['display_items_count']);
 }
-include('app/_parts/_header.php');
+include('app/manage_parts/_header.php');
 ?>
 <?php
 //GET情報取得
@@ -203,8 +203,8 @@ $search_results = $stmt->fetchAll();
 
     <p><button type="button" onclick="location.href='search.php'" class="submit">検索画面へ戻る</button></p>
     <p>
-        <button type="button" onclick="location.href='db_manage'" class="submit">TOPへ戻る</button>
+        <button type="button" onclick="location.href='db_manage'" class="submit">管理TOPへ戻る</button>
     </p>
 </main>
 <?php
-include('app/_parts/_footer.php');
+include('app/manage_parts/_footer.php');

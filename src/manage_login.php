@@ -1,6 +1,6 @@
 <?php
-require('app/functions.php');
-include('app/_parts/_header.php');
+require('app/manage_parts/functions.php');
+include('app/manage_parts/_header.php');
 createtoken();
 ?>
 <h1>DB管理システムログイン</h1>
@@ -26,4 +26,4 @@ createtoken();
     </div>
 </main>
 <?php
-include('app/_parts/_footer.php');
+include('app/manage_parts/_footer.php');

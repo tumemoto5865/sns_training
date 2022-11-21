@@ -1,6 +1,6 @@
 <?php
-require('app/functions.php');
-include('app/_parts/_header.php');
+require('app/manage_parts/functions.php');
+include('app/manage_parts/_header.php');
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     validateToken();
 }
@@ -35,4 +35,4 @@ $stmt->execute();
 <p class="alert_message">編集完了</p>
 <p><button type="button" onclick="history.go(-2)" class="submit">戻る</button></p>
 <?php
-include('app/_parts/_footer.php');
+include('app/manage_parts/_footer.php');

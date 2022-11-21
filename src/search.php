@@ -1,12 +1,11 @@
 <?php
-require('app/functions.php');
-include('app/_parts/_header.php');
+require('app/manage_parts/functions.php');
+include('app/manage_parts/_header.php');
 
 ?>
 <main>
   <h1>検索フォーム</h1>
   <div class="main">
-
 
     <form action="searchresult.php" method="get">
       <span class="input-form">
@@ -52,7 +51,7 @@ include('app/_parts/_header.php');
       </div>
     </p>
   </form>
-  <button type="button" onclick="location.href='db_manage.php'" class="submit">TOPへ戻る</button>
+  <button type="button" onclick="location.href='db_manage.php'" class="submit">管理TOPへ戻る</button>
 </main>
 <?php
-include('app/_parts/_footer.php');
+include('app/manage_parts/_footer.php');
