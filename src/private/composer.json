@@ -1,0 +1,17 @@
+{
+    "name": "project01/private",
+    "autoload": {
+        "psr-4": {
+            "Project01\\Private\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aejoia74",
+            "email": "kz43258587@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}

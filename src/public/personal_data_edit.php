@@ -1,24 +1,7 @@
 <?php
 require('../private/app/functions.php');
-try {
-    //データベースへ接続
-    $pdo = new PDO(
-        'mysql:host=mysql;dbname=test_db;charset=utf8mb4',
-        //ユーザー名
-        'test_db_docker',
-        //パス
-        'test_db_docker_pass',
-        //PDOのオプションを指定
-        [
-            PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
-            PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
-            PDO::ATTR_EMULATE_PREPARES => false,
-        ]
-    );
-} catch (PDOException $e) {
-    echo $e->getMessage();
-    exit;
-}
+require('../private/app/connect_database.php');
+
 include('../private/app/manage_header.php');
 createToken();
 
@@ -101,7 +84,7 @@ $edit_record = ($stmt->fetch());
             <input type="submit" value="削除" class="submit">
         </form>
     </p>
-    <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
+    <p><button type="button" onclick="location.href='searchresult.php'" class="submit">戻る</button></p>
 </main>
 <?php
 include('../private/app/manage_footer.php');

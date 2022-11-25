@@ -1,5 +1,4 @@
 <?php
-
 require('../private/app/functions.php');
 include('../private/app/manage_header.php');
 
