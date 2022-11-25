@@ -3,3 +3,5 @@ data/
 *.log
 xdebug.log
 src/hushcreate.php
+.env
+/vendor/

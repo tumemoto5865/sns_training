@@ -72,7 +72,7 @@ services:
       context: ./laravel
       dockerfile: Dockerfile
     ports:
-      - 555:80
+      - 8889:80
     volumes:
       - ./user_page:/var/www/user_page
     working_dir: /var/www/user_page

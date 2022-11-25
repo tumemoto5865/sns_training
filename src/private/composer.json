@@ -1,0 +1,17 @@
+{
+    "name": "hasegawa/project01",
+    "autoload": {
+        "psr-4": {
+            "Hasegawa\\Project01\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "aejoia74",
+            "email": "kz43258587@gmail.com"
+        }
+    ],
+    "require": {
+        "vlucas/phpdotenv": "^5.5"
+    }
+}
