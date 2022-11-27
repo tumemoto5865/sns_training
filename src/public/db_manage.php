@@ -9,7 +9,6 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
         'manager_id' => hsc(filter_input(INPUT_POST, 'manager_id')),
         'manager_pw' => hsc(filter_input(INPUT_POST, 'manager_pw')),
     ];
-
     require('../app/connect_database.php');
     $stmt = $pdo->prepare('SELECT * FROM managers_data WHERE `manager_id` = :manager_id');
     $stmt->bindValue(':manager_id', $manager_info['manager_id'], PDO::PARAM_STR);
@@ -17,12 +16,12 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     $registerd_info = $stmt->fetch();
 
     if (empty($registerd_info)) {
-        include('../app/error_header.php');
+        include('../app/manage_header.php');
         ?>
         <p class="alert_message">ログイン情報が間違っています。</p>
         <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
         <?php
-        include('../app/error_footer.php');
+        include('../app/manage_footer.php');
         exit;
     } elseif (
         password_verify(
@@ -30,15 +29,15 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
             $registerd_info['manager_password']
         )
     ) {
-        $_SESSION['login'] = bin2hex(random_bytes(32));
-        setcookie('login', $_SESSION['login']);
+        session_regenerate_id(true);
+        $_SESSION['login'] = $_POST['manager_id'];
     } else {
-        include('../app/error_header.php');
+        include('../app/manage_header.php');
         ?>
         <p class="alert_message">ログイン情報が間違っています。</p>
         <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
         <?php
-        include('../app/error_footer.php');
+        include('../app/manage_footer.php');
         exit;
     }
 } else {

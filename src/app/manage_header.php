@@ -8,5 +8,15 @@
   <title>test_DB</title>
   <link rel="stylesheet" href="../app/css/styles.css">
 </head>
-
+<header>
+    <?php
+    if (isset($_SESSION['login'])) {
+        ?><p>ログインID:<?= $_SESSION['login']; ?></p>
+    <?php
+    } else {
+        ?><p>未ログイン</p>
+    <?php
+    }
+    ?>
+</header>
 <body>

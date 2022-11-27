@@ -25,14 +25,12 @@ function validateToken()
 
 //ログイン情報チェック
 function validateLogin() {
-    if ((empty($_SESSION['login'])) ||
-    $_SESSION['login'] !== $_COOKIE['login']) {
-        include('error_parts/_header.php');
+    if (!isset($_SESSION['login'])) {
+        include('../app/manage_header.php');
         ?>
         <p class="alert_message">ログインされていません。</p>
-        <p><button type="button" onclick="history.back()" class="submit">戻る</button></p>
         <?php
-        include('error_parts/_footer.php');
+        include('../app/manage_footer.php');
         exit;
     }
 }
