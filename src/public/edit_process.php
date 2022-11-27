@@ -1,8 +1,8 @@
 <?php
-require('../private/app/functions.php');
+require('../app/functions.php');
 validateLogin();
-require('../private/app/connect_database.php');
-include('../private/app/manage_header.php');
+require('../app/connect_database.php');
+include('../app/manage_header.php');
 
 $edit_id = filter_input(INPUT_POST, "edit_id");
 
@@ -34,4 +34,4 @@ $stmt->execute();
 <p class="alert_message">編集完了</p>
 <p><button type="button" onclick="location.href='searchresult.php'" class="submit">戻る</button></p>
 <?php
-include('../private/app/manage_footer.php');
+include('../app/manage_footer.php');

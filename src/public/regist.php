@@ -1,7 +1,7 @@
 <?php
-require('../private/app/functions.php');
+require('../app/functions.php');
 validateLogin();
-include('../private/app/manage_header.php');
+include('../app/manage_header.php');
 
 ?>
 <h1>登録フォーム</h1>
@@ -59,4 +59,4 @@ include('../private/app/manage_header.php');
 <button type="button" onclick="location.href='db_manage.php'" class="submit">管理TOPへ戻る</button>
 
 <?php
-include('../private/app/manage_footer.php');
+include('../app/manage_footer.php');

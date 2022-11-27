@@ -1,10 +1,10 @@
 <?php
-require('../private/app/functions.php');
+require('../app/functions.php');
 validateLogin();
-require('../private/app/connect_database.php');
+require('../app/connect_database.php');
 
 
-include('../private/app/manage_header.php');
+include('../app/manage_header.php');
 validateLogin();
 ?>
 <?php
@@ -213,4 +213,4 @@ $search_results = $stmt->fetchAll();
     </p>
 </main>
 <?php
-include('../private/app/manage_footer.php');
+include('../app/manage_footer.php');

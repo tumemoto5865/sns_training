@@ -1,8 +1,8 @@
 <?php
-require('../private/app/functions.php');
+require('../app/functions.php');
 validateLogin();
-require('../private/app/connect_database.php');
-include('../private/app/manage_header.php');
+require('../app/connect_database.php');
+include('../app/manage_header.php');
 ?>
 <?php
 //まずは渡ってきた値を受ける
@@ -99,4 +99,4 @@ if (in_array("", $regist_info, true)) {
 <button type="button" onclick="location.href='db_manage.php'" class="submit">管理TOPへ戻る</button>
 
 <?php
-include('../private/app/manage_footer.php');
+include('../app/manage_footer.php');

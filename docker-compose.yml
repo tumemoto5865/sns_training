@@ -66,14 +66,3 @@ services:
       - mysql
     container_name: phpmyadmin
     restart: always
-
-  laravel:
-    build:
-      context: ./laravel
-      dockerfile: Dockerfile
-    ports:
-      - 8889:80
-    volumes:
-      - ./user_page:/var/www/user_page
-    working_dir: /var/www/user_page
-    container_name: laravel

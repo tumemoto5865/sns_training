@@ -1,8 +1,8 @@
 <?php
-require('../private/app/functions.php');
+require('../app/functions.php');
 //このページからのログイン以外は受け付けない。
 createToken();
-include('../private/app/user_header.php');
+include('../app/user_header.php');
 
 if (isset($_POST['logout'])) {
     if (isset($_SESSION['login'])) {
@@ -31,4 +31,4 @@ if (isset($_POST['logout'])) {
 <p id="manage_link"><a href="manage_login.php">DB管理</a></p>
 </main>
 <?php
-include('../private/app/user_footer.php');
+include('../app/user_footer.php');
