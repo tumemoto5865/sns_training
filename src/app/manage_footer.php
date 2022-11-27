@@ -11,13 +11,12 @@
     <?php
     } else {
     ?>
-    <p><a href="index.php">index.phpに戻る</a></p>
+        <p><a href="index.php">index.phpに戻る</a></p>
     <?php
     }
     ?>
 </footer>
 <script>
-    app / script.js
 </script>
 </body>
 
