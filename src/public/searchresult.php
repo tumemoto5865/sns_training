@@ -2,9 +2,6 @@
 require('../app/functions.php');
 validateLogin();
 require('../app/connect_database.php');
-
-
-include('../app/manage_header.php');
 validateLogin();
 ?>
 <?php
@@ -90,6 +87,8 @@ if (!empty($_GET["sort_column"])) {
 if (isset($_GET['display_items_count'])) {
     setcookie("display_items_count", $_GET['display_items_count']);
 }
+
+include('../app/manage_header.php');
 
 //ORDER BY文生成
 $oreder_by_condition = function ($sort_info) {
